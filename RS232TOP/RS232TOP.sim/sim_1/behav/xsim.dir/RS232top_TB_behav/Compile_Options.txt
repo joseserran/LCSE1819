@@ -1,0 +1,1 @@
+-wto "e50efd1c120141828cea80454c1d5952" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "RS232top_TB_behav" "xil_defaultlib.RS232top_TB" -log "elaborate.log" 

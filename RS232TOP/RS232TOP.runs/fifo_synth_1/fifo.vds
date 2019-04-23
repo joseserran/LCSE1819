@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Apr 23 13:47:14 2019
+# Process ID: 10312
+# Current directory: C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/fifo_synth_1
+# Command line: vivado.exe -log fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo.tcl
+# Log file: C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/fifo_synth_1/fifo.vds
+# Journal file: C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 327.156 ; gain = 81.680
+INFO: [Synth 8-638] synthesizing module 'fifo' [c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/synth/fifo.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'fifo' (24#1) [c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/synth/fifo.vhd:72]
+Finished RTL Elaboration : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 545.688 ; gain = 300.211
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 545.688 ; gain = 300.211
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 622.684 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 622.684 ; gain = 377.207
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 622.684 ; gain = 377.207
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 622.684 ; gain = 377.207
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 622.684 ; gain = 377.207
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 622.684 ; gain = 377.207
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 637.918 ; gain = 392.441
+Finished Timing Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 650.063 ; gain = 404.586
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 659.207 ; gain = 413.730
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 659.207 ; gain = 413.730
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 659.207 ; gain = 413.730
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 659.207 ; gain = 413.730
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 659.207 ; gain = 413.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 659.207 ; gain = 413.730
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 659.207 ; gain = 413.730
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     4|
+|2     |LUT2     |     4|
+|3     |LUT3     |     5|
+|4     |LUT4     |     2|
+|5     |LUT5     |     2|
+|6     |LUT6     |     4|
+|7     |RAMB18E1 |     1|
+|8     |FDRE     |    16|
+|9     |FDSE     |     4|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 659.207 ; gain = 413.730
+synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 662.180 ; gain = 420.332
