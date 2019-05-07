@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Apr 23 13:59:18 2019
+| Date         : Tue May  7 13:31:20 2019
 | Host         : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file RS232top_drc_routed.rpt -pb RS232top_drc_routed.pb -rpx RS232top_drc_routed.rpx
 | Design       : RS232top
@@ -24,14 +24,14 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 11
+             Violations found: 8
 +-----------+------------------+-----------------------------------------------------+------------+
 | Rule      | Severity         | Description                                         | Violations |
 +-----------+------------------+-----------------------------------------------------+------------+
 | NSTD-1    | Critical Warning | Unspecified I/O Standard                            | 1          |
 | UCIO-1    | Critical Warning | Unconstrained Logical Port                          | 1          |
 | CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153  | Warning          | Gated clock check                                   | 7          |
+| PDRC-153  | Warning          | Gated clock check                                   | 4          |
 | RTSTAT-10 | Warning          | No routable loads                                   | 1          |
 +-----------+------------------+-----------------------------------------------------+------------+
 
@@ -77,22 +77,7 @@ Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net Receiver/estado_s_reg[1]_i_2__0_n_0 is a gated clock net sourced by a combinational pin Receiver/estado_s_reg[1]_i_2__0/O, cell Receiver/estado_s_reg[1]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#5 Warning
-Gated clock check  
-Net Transmitter/eot_reg_i_2_n_0 is a gated clock net sourced by a combinational pin Transmitter/eot_reg_i_2/O, cell Transmitter/eot_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#6 Warning
-Gated clock check  
-Net Transmitter/estado_s_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin Transmitter/estado_s_reg[1]_i_2/O, cell Transmitter/estado_s_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#7 Warning
-Gated clock check  
-Net Transmitter/tx_reg_i_2_n_0 is a gated clock net sourced by a combinational pin Transmitter/tx_reg_i_2/O, cell Transmitter/tx_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net Receiver/estado_s_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin Receiver/estado_s_reg[1]_i_2/O, cell Receiver/estado_s_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 RTSTAT-10#1 Warning

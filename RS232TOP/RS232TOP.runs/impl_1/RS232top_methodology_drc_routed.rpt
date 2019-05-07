@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Apr 23 13:59:21 2019
+| Date         : Tue May  7 13:31:24 2019
 | Host         : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_methodology -file RS232top_methodology_drc_routed.rpt -rpx RS232top_methodology_drc_routed.rpx
 | Design       : RS232top
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 42
+             Violations found: 40
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 23         |
-| TIMING-20 | Warning  | Non-clocked latch             | 19         |
+| TIMING-18 | Warning  | Missing input or output delay | 25         |
+| TIMING-20 | Warning  | Non-clocked latch             | 15         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -148,6 +148,16 @@ Missing input or output delay
 An output delay is missing on Full relative to clock(s) VIRTUAL_clk_out1_Clk_Gen 
 Related violations: <none>
 
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on TD relative to clock(s) VIRTUAL_clk_out1_Clk_Gen 
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on TX_RDY relative to clock(s) VIRTUAL_clk_out1_Clk_Gen 
+Related violations: <none>
+
 TIMING-20#1 Warning
 Non-clocked latch  
 The latch Receiver/Store_out_reg cannot be properly analyzed as its control pin Receiver/Store_out_reg/G is not reached by a timing clock
@@ -221,26 +231,6 @@ Related violations: <none>
 TIMING-20#15 Warning
 Non-clocked latch  
 The latch Receiver/estado_s_reg[1] cannot be properly analyzed as its control pin Receiver/estado_s_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#16 Warning
-Non-clocked latch  
-The latch Transmitter/eot_reg cannot be properly analyzed as its control pin Transmitter/eot_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#17 Warning
-Non-clocked latch  
-The latch Transmitter/estado_s_reg[0] cannot be properly analyzed as its control pin Transmitter/estado_s_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#18 Warning
-Non-clocked latch  
-The latch Transmitter/estado_s_reg[1] cannot be properly analyzed as its control pin Transmitter/estado_s_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#19 Warning
-Non-clocked latch  
-The latch Transmitter/tx_reg cannot be properly analyzed as its control pin Transmitter/tx_reg/G is not reached by a timing clock
 Related violations: <none>
 
 

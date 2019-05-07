@@ -57,10 +57,10 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/RS232top.dcp
-  read_ip -quiet c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xci
-  set_property is_locked true [get_files c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xci]
-  read_ip -quiet c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci
-  set_property is_locked true [get_files c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci]
+  read_ip -quiet C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xci
+  set_property is_locked true [get_files C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xci]
+  read_ip -quiet C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci
+  set_property is_locked true [get_files C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci]
   read_xdc C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.xdc
   link_design -top RS232top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

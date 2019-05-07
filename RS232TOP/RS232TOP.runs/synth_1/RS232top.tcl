@@ -22,16 +22,16 @@ read_vhdl -library xil_defaultlib {
   C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd
   C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd
 }
-read_ip -quiet c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xci
+read_ip -quiet C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xci
 set_property used_in_implementation false [get_files -all c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo_ooc.xdc]
-set_property is_locked true [get_files c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xci]
+set_property is_locked true [get_files C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo.xci]
 
-read_ip -quiet c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci
+read_ip -quiet C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci
 set_property used_in_implementation false [get_files -all c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen_ooc.xdc]
-set_property is_locked true [get_files c:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci]
+set_property is_locked true [get_files C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

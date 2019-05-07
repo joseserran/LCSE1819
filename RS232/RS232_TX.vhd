@@ -69,8 +69,14 @@ reloj: process (clk, reset)
         
 end process; 
 
-estados: process(estado_a, start, data_count, pulse_width)
+estados: process(estado_a, start, data_count, pulse_width, data)
 begin
+    --añadido para eliminar latches
+        estado_s <= estado_a;
+        tx<='1';--en espera se esta a nivel alto
+        eot<='1';--final de transmision
+    --hasta aqui
+        
         data_siguiente<=data_count;
         pulse_siguiente<=pulse_width;
         
@@ -80,15 +86,15 @@ begin
      eot<='1';--final de transmision
      tx<='1';--en espera se esta a nivel alto
         if start = '1' then
-         estado_s <= startbit;
-         eot<='0';--final de transmision
+            estado_s <= startbit;
+            eot<='0';--final de transmision
         else 
-        estado_s <= idle;
-
+            estado_s <= idle;
+            eot<='1';--final de transmision
         end if;
         
-    when startbit =>
-            tx<='0';--ponemos a nivel bajo la linea de transmision
+     when startbit =>
+    tx<='0';--ponemos a nivel bajo la linea de transmision
             
         if pulse_width = 173 then 
            estado_s <= senddata;--entramos en estado de mandar datos
