@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed May  8 14:55:24 2019
+| Date         : Thu May  9 12:04:47 2019
 | Host         : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_methodology -file RS232top_methodology_drc_routed.rpt -rpx RS232top_methodology_drc_routed.rpx
 | Design       : RS232top
@@ -23,16 +23,26 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 31
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 25         |
-| TIMING-20 | Warning  | Non-clocked latch             | 6          |
-+-----------+----------+-------------------------------+------------+
+             Violations found: 27
++-----------+----------+------------------------------------------------+------------+
+| Rule      | Severity | Description                                    | Violations |
++-----------+----------+------------------------------------------------+------------+
+| TIMING-6  | Warning  | No common primary clock between related clocks | 2          |
+| TIMING-18 | Warning  | Missing input or output delay                  | 25         |
++-----------+----------+------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_Clk_Gen and clk_out1_Clk_Gen_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_Clk_Gen] -to [get_clocks clk_out1_Clk_Gen_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_Clk_Gen_1 and clk_out1_Clk_Gen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_Clk_Gen_1] -to [get_clocks clk_out1_Clk_Gen]
+Related violations: <none>
+
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on Data_in[0] relative to clock(s) VIRTUAL_clk_out1_Clk_Gen 
@@ -95,7 +105,7 @@ Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on Ack_in relative to clock(s) VIRTUAL_clk_out1_Clk_Gen 
+An output delay is missing on ACK_in relative to clock(s) VIRTUAL_clk_out1_Clk_Gen 
 Related violations: <none>
 
 TIMING-18#14 Warning
@@ -156,36 +166,6 @@ Related violations: <none>
 TIMING-18#25 Warning
 Missing input or output delay  
 An output delay is missing on TX_RDY relative to clock(s) VIRTUAL_clk_out1_Clk_Gen 
-Related violations: <none>
-
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch Receiver/data_siguiente_reg[0] cannot be properly analyzed as its control pin Receiver/data_siguiente_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch Receiver/data_siguiente_reg[1] cannot be properly analyzed as its control pin Receiver/data_siguiente_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch Receiver/data_siguiente_reg[2] cannot be properly analyzed as its control pin Receiver/data_siguiente_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch Receiver/data_siguiente_reg[3] cannot be properly analyzed as its control pin Receiver/data_siguiente_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#5 Warning
-Non-clocked latch  
-The latch Receiver/estado_s_reg[0] cannot be properly analyzed as its control pin Receiver/estado_s_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#6 Warning
-Non-clocked latch  
-The latch Receiver/estado_s_reg[1] cannot be properly analyzed as its control pin Receiver/estado_s_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 

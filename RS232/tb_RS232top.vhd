@@ -61,58 +61,58 @@ begin
     -- TD <= "11100010" after 100000 ns;
      
      --conun solo bit
-     Valid_D <= '1', '0' after 300 ns,
-                '1' after 1210 ns;
-     RD <= '1',
-           '0' after 10500 ns,    -- StartBit
-           '1' after 19150 ns,   -- LSb
-           '0' after 27800 ns,
-           '0' after 36450 ns,
-           '1' after 45100 ns,
-           '1' after 53750 ns,
-           '1' after 62400 ns,
-           '1' after 71050 ns,
-           '0' after 79700 ns,  -- MSb
-           '1' after 88350 ns,  -- Stopbit
-           '1' after 97000 ns;
-     Data_read <= '0','1'after 98000 ns;
+--     Valid_D <= '1', '0' after 300 ns,
+--                '1' after 1210 ns;
+--     RD <= '1',
+--           '0' after 10500 ns,    -- StartBit
+--           '1' after 19150 ns,   -- LSb
+--           '0' after 27800 ns,
+--           '0' after 36450 ns,
+--           '1' after 45100 ns,
+--           '1' after 53750 ns,
+--           '1' after 62400 ns,
+--           '1' after 71050 ns,
+--           '0' after 79700 ns,  -- MSb
+--           '1' after 88350 ns,  -- Stopbit
+--           '1' after 97000 ns;
+--     Data_read <= '0','1'after 98000 ns;
      
      
 ----    un bit con mas retraso
---          Valid_D <='1', '0' after 110 ns,
---                '1' after 400 ns,
---                 '1' after 100000 ns,
---                  '0' after 100110 ns,
---                '1' after 100400 ns;
+          Valid_D <='1', '0' after 110 ns,
+                '1' after 400 ns,
+                 '1' after 100000 ns,
+                  '0' after 100110 ns,
+                '1' after 100400 ns;
                 
---          RD <= '1',
---           '0' after 500 ns,    -- StartBit
---                '1' after 9150 ns,   -- LSb
---                '0' after 17800 ns,
---                '0' after 26450 ns,
---                '1' after 35100 ns,
---                '1' after 43750 ns,
---                '1' after 52400 ns,
---                '1' after 61050 ns,
---                '0' after 69700 ns,  -- MSb
---                '1' after 78350 ns,  -- Stopbit
---                '1' after 87000 ns,
+          RD <= '1',
+           '0' after 500 ns,    -- StartBit
+                '1' after 9150 ns,   -- LSb
+                '0' after 17800 ns,
+                '0' after 26450 ns,
+                '1' after 35100 ns,
+                '1' after 43750 ns,
+                '1' after 52400 ns,
+                '1' after 61050 ns,
+                '0' after 69700 ns,  -- MSb
+                '1' after 78350 ns,  -- Stopbit
+                '1' after 87000 ns,
 
 -- -- con un segundo bit
      
---               '0' after 100500 ns,    -- StartBit
---               '1' after 109150 ns,   -- LSb
---               '1' after 117800 ns,
---               '1' after 126450 ns,
---               '0' after 135100 ns,
---               '1' after 143750 ns,
---               '0' after 152400 ns,
---               '1' after 161050 ns,
---               '0' after 169700 ns,  -- MSb
---               '1' after 178350 ns,  -- Stopbit
---               '1' after 187000 ns;
+               '0' after 100500 ns,    -- StartBit
+               '1' after 109150 ns,   -- LSb
+               '1' after 117800 ns,
+               '1' after 126450 ns,
+               '0' after 135100 ns,
+               '1' after 143750 ns,
+               '0' after 152400 ns,
+               '1' after 161050 ns,
+               '0' after 169700 ns,  -- MSb
+               '1' after 178350 ns,  -- Stopbit
+               '1' after 187000 ns;
                
--- Data_read <= '0','1'after 88000 ns;
+ Data_read <= '0','1'after 88000 ns;
 
      wait;
   END PROCESS;

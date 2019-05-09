@@ -68,6 +68,7 @@ begin
         shift_reg(2) <= shift_reg(3);
         shift_reg(1) <= shift_reg(2);
         shift_reg(0) <= shift_reg(1);
+        Q <= shift_reg;
         end if;
     end if;
 end process;

@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed May  8 14:52:03 2019
-# Process ID: 17240
+# Start of session at: Thu May  9 12:01:26 2019
+# Process ID: 24392
 # Current directory: C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1
 # Command line: vivado.exe -log RS232top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RS232top.tcl
 # Log file: C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/RS232top.vds
@@ -15,13 +15,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24456 
+INFO: Helper process launched with PID 28360 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 327.895 ; gain = 75.055
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 328.219 ; gain = 76.035
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'RS232top' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:26]
-INFO: [Synth 8-3491] module 'Clk_Gen' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:5' bound to instance 'Clock_generator' of component 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:109]
-INFO: [Synth 8-638] synthesizing module 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Clk_Gen' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:5' bound to instance 'Clock_generator' of component 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:15]
 INFO: [Synth 8-3491] module 'RS232_TX' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:34' bound to instance 'Transmitter' of component 'RS232_TX' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:116]
 INFO: [Synth 8-638] synthesizing module 'RS232_TX' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'RS232_TX' (1#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:45]
@@ -30,16 +30,12 @@ INFO: [Synth 8-638] synthesizing module 'RS232_RX' [C:/Users/joseangelSSD/Docume
 INFO: [Synth 8-256] done synthesizing module 'RS232_RX' (2#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd:45]
 INFO: [Synth 8-3491] module 'ShiftRegister' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:34' bound to instance 'Shift' of component 'ShiftRegister' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:134]
 INFO: [Synth 8-638] synthesizing module 'ShiftRegister' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:53]
-WARNING: [Synth 8-6014] Unused sequential element shift_reg_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:63]
 INFO: [Synth 8-256] done synthesizing module 'ShiftRegister' (3#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:53]
-INFO: [Synth 8-3491] module 'fifo' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/realtime/fifo_stub.vhdl:5' bound to instance 'Internal_memory' of component 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:144]
-INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/realtime/fifo_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'fifo' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/realtime/fifo_stub.vhdl:5' bound to instance 'Internal_memory' of component 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/realtime/fifo_stub.vhdl:19]
 INFO: [Synth 8-256] done synthesizing module 'RS232top' (4#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:26]
-WARNING: [Synth 8-3331] design ShiftRegister has unconnected port Clk
-WARNING: [Synth 8-3331] design ShiftRegister has unconnected port Enable
-WARNING: [Synth 8-3331] design ShiftRegister has unconnected port D
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 368.156 ; gain = 115.316
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 368.230 ; gain = 116.047
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -49,23 +45,19 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 368.156 ; gain = 115.316
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 368.230 ; gain = 116.047
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/dcp5/fifo_in_context.xdc] for cell 'Internal_memory'
-Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/dcp5/fifo_in_context.xdc] for cell 'Internal_memory'
-Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/dcp7/Clk_Gen_in_context.xdc] for cell 'Clock_generator'
-Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/dcp7/Clk_Gen_in_context.xdc] for cell 'Clock_generator'
+Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/dcp5/fifo_in_context.xdc] for cell 'Internal_memory'
+Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/dcp5/fifo_in_context.xdc] for cell 'Internal_memory'
+Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/dcp7/Clk_Gen_in_context.xdc] for cell 'Clock_generator'
+Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/dcp7/Clk_Gen_in_context.xdc] for cell 'Clock_generator'
 Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.xdc]
-WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.xdc:7]
-WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.xdc:8]
-WARNING: [Vivado 12-584] No ports matched 'ACK_in'. [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.xdc:44]
 Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/RS232top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RS232top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/RS232top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
@@ -73,41 +65,37 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 679.629 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 680.203 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for Clk100MHz. (constraint file  C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/dcp7/Clk_Gen_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk100MHz. (constraint file  C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-17240-joseangelSSD-PC/dcp7/Clk_Gen_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/dcp7/Clk_Gen_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/.Xil/Vivado-24392-joseangelSSD-PC/dcp7/Clk_Gen_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for Clock_generator. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Internal_memory. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "estado_s" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "estado_s" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "estado_s" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "data_siguiente" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "valid_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "valid_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "estado_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "estado_s" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "estado_s" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "estado_s" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "data_siguiente" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "data_siguiente" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd:67]
-WARNING: [Synth 8-327] inferring latch for variable 'data_siguiente_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd:69]
-WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:60]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -124,7 +112,7 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 3     
+	                8 Bit    Registers := 5     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
@@ -133,12 +121,11 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit        Muxes := 2     
 	   4 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
 	   5 Input      2 Bit        Muxes := 1     
-	   7 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 10    
-	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -179,10 +166,14 @@ Detailed RTL Component Info :
 	   4 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
-	   7 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+Module ShiftRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -199,16 +190,9 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "Transmitter/estado_s" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Receiver/data_siguiente" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3886] merging instance 'Shift/Q_reg[0]' (LD) to 'Shift/Q_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Shift/Q_reg[1]' (LD) to 'Shift/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Shift/Q_reg[2]' (LD) to 'Shift/Q_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Shift/Q_reg[3]' (LD) to 'Shift/Q_reg[4]'
-INFO: [Synth 8-3886] merging instance 'Shift/Q_reg[4]' (LD) to 'Shift/Q_reg[5]'
-INFO: [Synth 8-3886] merging instance 'Shift/Q_reg[5]' (LD) to 'Shift/Q_reg[6]'
-INFO: [Synth 8-3886] merging instance 'Shift/Q_reg[6]' (LD) to 'Shift/Q_reg[7]'
+INFO: [Synth 8-5546] ROM "Receiver/valid_out" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -222,13 +206,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'Clock_generator/clk_out1' to pin 'Clock_generator/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -240,7 +224,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -264,7 +248,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -277,7 +261,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -289,25 +273,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -329,44 +313,43 @@ Report Cell Usage:
 |2     |fifo_bbox    |     1|
 |3     |LUT1         |     2|
 |4     |LUT2         |     4|
-|5     |LUT3         |     6|
+|5     |LUT3         |     8|
 |6     |LUT4         |    14|
-|7     |LUT5         |    10|
-|8     |LUT6         |    21|
-|9     |FDCE         |    35|
+|7     |LUT5         |     7|
+|8     |LUT6         |    22|
+|9     |FDCE         |    43|
 |10    |FDPE         |     2|
-|11    |FDRE         |     1|
-|12    |LD           |     6|
-|13    |IBUF         |    12|
-|14    |OBUF         |    13|
+|11    |FDRE         |     9|
+|12    |IBUF         |    12|
+|13    |OBUF         |    13|
 +------+-------------+------+
 
 Report Instance Areas: 
-+------+--------------+---------+------+
-|      |Instance      |Module   |Cells |
-+------+--------------+---------+------+
-|1     |top           |         |   138|
-|2     |  Receiver    |RS232_RX |    50|
-|3     |  Transmitter |RS232_TX |    40|
-+------+--------------+---------+------+
++------+--------------+--------------+------+
+|      |Instance      |Module        |Cells |
++------+--------------+--------------+------+
+|1     |top           |              |   148|
+|2     |  Receiver    |RS232_RX      |    44|
+|3     |  Shift       |ShiftRegister |    16|
+|4     |  Transmitter |RS232_TX      |    40|
++------+--------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 679.629 ; gain = 426.789
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 680.203 ; gain = 428.020
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 679.629 ; gain = 115.316
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 679.629 ; gain = 426.789
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 680.203 ; gain = 116.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 680.203 ; gain = 428.020
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 6 instances were transformed.
-  LD => LDCE: 6 instances
+No Unisim elements were transformed.
 
-46 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+38 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 679.629 ; gain = 437.559
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 680.203 ; gain = 439.070
 INFO: [Common 17-1381] The checkpoint 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/synth_1/RS232top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 679.629 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed May  8 14:52:49 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 680.203 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 12:02:27 2019...

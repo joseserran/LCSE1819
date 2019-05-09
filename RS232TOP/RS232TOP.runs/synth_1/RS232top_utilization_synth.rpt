@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed May  8 14:52:49 2019
+| Date         : Thu May  9 12:02:27 2019
 | Host         : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file RS232top_utilization_synth.rpt -pb RS232top_utilization_synth.pb
 | Design       : RS232top
@@ -33,9 +33,9 @@ Table of Contents
 | Slice LUTs*             |   43 |     0 |     63400 |  0.07 |
 |   LUT as Logic          |   43 |     0 |     63400 |  0.07 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |   44 |     0 |    126800 |  0.03 |
-|   Register as Flip Flop |   38 |     0 |    126800 |  0.03 |
-|   Register as Latch     |    6 |     0 |    126800 | <0.01 |
+| Slice Registers         |   54 |     0 |    126800 |  0.04 |
+|   Register as Flip Flop |   54 |     0 |    126800 |  0.04 |
+|   Register as Latch     |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
@@ -55,9 +55,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 2     |          Yes |           - |          Set |
-| 41    |          Yes |           - |        Reset |
+| 43    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 1     |          Yes |       Reset |            - |
+| 9     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -146,18 +146,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |   35 |        Flop & Latch |
-| LUT6     |   21 |                 LUT |
+| FDCE     |   43 |        Flop & Latch |
+| LUT6     |   22 |                 LUT |
 | LUT4     |   14 |                 LUT |
 | OBUF     |   13 |                  IO |
 | IBUF     |   12 |                  IO |
-| LUT5     |   10 |                 LUT |
-| LUT3     |    6 |                 LUT |
-| LDCE     |    6 |        Flop & Latch |
+| FDRE     |    9 |        Flop & Latch |
+| LUT3     |    8 |                 LUT |
+| LUT5     |    7 |                 LUT |
 | LUT2     |    4 |                 LUT |
 | LUT1     |    2 |                 LUT |
 | FDPE     |    2 |        Flop & Latch |
-| FDRE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 
 
