@@ -2,10 +2,10 @@
 2017.2
 Jun 15 2017
 18:52:51
-C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd,1556017121,vhdl,,,,rs232_rx,,,,,,,,
+C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd,1557319916,vhdl,,,,rs232_rx,,,,,,,,
 C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd,1557228335,vhdl,,,,rs232_tx,,,,,,,,
 C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd,1556017121,vhdl,,,,rs232top,,,,,,,,
 C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd,1556017121,vhdl,,,,shiftregister,,,,,,,,
-C:/Users/joseangelSSD/Documents/LCSE1819/RS232/tb_RS232top.vhd,1544522035,vhdl,,,,rs232top_tb,,,,,,,,
+C:/Users/joseangelSSD/Documents/LCSE1819/RS232/tb_RS232top.vhd,1557321438,vhdl,,,,rs232top_tb,,,,,,,,
 C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl,1556020341,vhdl,,,,clk_gen;clk_gen_clk_gen_clk_wiz,,,,,,,,
 C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl,1556020146,vhdl,,,,fifo;fifo_blk_mem_gen_generic_cstr;fifo_blk_mem_gen_prim_width;fifo_blk_mem_gen_prim_wrapper;fifo_blk_mem_gen_top;fifo_blk_mem_gen_v8_3_6;fifo_blk_mem_gen_v8_3_6_synth;fifo_fifo_generator_ramfifo;fifo_fifo_generator_top;fifo_fifo_generator_v13_1_4;fifo_fifo_generator_v13_1_4_synth;fifo_memory;fifo_rd_bin_cntr;fifo_rd_logic;fifo_rd_status_flags_ss;fifo_wr_bin_cntr;fifo_wr_logic;fifo_wr_status_flags_ss,,,,,,,,

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue May  7 13:29:43 2019
+| Date         : Wed May  8 14:54:39 2019
 | Host         : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file RS232top_control_sets_placed.rpt
 | Design       : RS232top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    10 |
-| Unused register locations in slices containing registers |    23 |
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    24 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,32 +33,30 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              18 |            8 |
-| No           | No                    | Yes                    |              19 |            6 |
+| No           | No                    | No                     |               7 |            4 |
+| No           | No                    | Yes                    |              21 |            9 |
 | No           | Yes                   | No                     |               4 |            2 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              16 |            7 |
-| Yes          | Yes                   | No                     |              16 |            6 |
+| Yes          | No                    | Yes                    |              16 |            4 |
+| Yes          | Yes                   | No                     |              16 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------------------+----------------------------------------------------------------------------------------------+-------------------+------------------+----------------+
-|                 Clock Signal                |                                         Enable Signal                                        |  Set/Reset Signal | Slice Load Count | Bel Load Count |
-+---------------------------------------------+----------------------------------------------------------------------------------------------+-------------------+------------------+----------------+
-|  Receiver/Store_out_reg_i_2_n_0             |                                                                                              |                   |                1 |              1 |
-|  Receiver/estado_s_reg[1]_i_2_n_0           |                                                                                              |                   |                1 |              2 |
-|  Clock_generator/inst/clk_out1              |                                                                                              |                   |                2 |              3 |
-|  Receiver/data_siguiente_reg[3]_i_2_n_0     |                                                                                              |                   |                2 |              4 |
-|  Receiver/contador_siguiente_reg[7]_i_2_n_0 |                                                                                              |                   |                2 |              8 |
-|  Clock_generator/inst/clk_out1              | Transmitter/pulse_width[7]_i_1_n_0                                                           | Transmitter/AR[0] |                4 |              8 |
-|  Clock_generator/inst/clk_out1              | Transmitter/E[0]                                                                             | Transmitter/AR[0] |                3 |              8 |
-|  Clock_generator/inst/clk_out1              | Internal_memory/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] | Transmitter/AR[0] |                3 |              8 |
-|  Clock_generator/inst/clk_out1              | Internal_memory/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] | Transmitter/AR[0] |                3 |              8 |
-|  Clock_generator/inst/clk_out1              |                                                                                              | Transmitter/AR[0] |                8 |             23 |
-+---------------------------------------------+----------------------------------------------------------------------------------------------+-------------------+------------------+----------------+
++-----------------------------------------+----------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|               Clock Signal              |                                         Enable Signal                                        | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------------------------+----------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|  Clock_generator/inst/clk_out1          |                                                                                              |                  |                1 |              1 |
+|  Receiver/estado_s_reg[1]_i_2_n_0       |                                                                                              |                  |                1 |              2 |
+|  Receiver/data_siguiente_reg[3]_i_2_n_0 |                                                                                              |                  |                2 |              4 |
+|  Clock_generator/inst/clk_out1          | Transmitter/pulse_width[7]_i_1_n_0                                                           | Receiver/p_0_in  |                2 |              8 |
+|  Clock_generator/inst/clk_out1          | Transmitter/E[0]                                                                             | Receiver/p_0_in  |                2 |              8 |
+|  Clock_generator/inst/clk_out1          | Internal_memory/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0] | Receiver/p_0_in  |                2 |              8 |
+|  Clock_generator/inst/clk_out1          | Internal_memory/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0] | Receiver/p_0_in  |                1 |              8 |
+|  Clock_generator/inst/clk_out1          |                                                                                              | Receiver/p_0_in  |               11 |             25 |
++-----------------------------------------+----------------------------------------------------------------------------------------------+------------------+------------------+----------------+
 
 
 +--------+-----------------------+
@@ -66,9 +64,8 @@ Table of Contents
 +--------+-----------------------+
 | 1      |                     1 |
 | 2      |                     1 |
-| 3      |                     1 |
 | 4      |                     1 |
-| 8      |                     5 |
+| 8      |                     4 |
 | 16+    |                     1 |
 +--------+-----------------------+
 

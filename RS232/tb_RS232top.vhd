@@ -46,7 +46,7 @@ begin
       Empty     => Empty);
 
   Data_in <= "11100010";-- after 100000 ns;
- 
+  
   -- Clock generator
   p_clk : PROCESS
   BEGIN
@@ -58,6 +58,7 @@ begin
   p_reset : PROCESS
   BEGIN
      reset <= '0', '1' after 200 ns;
+    -- TD <= "11100010" after 100000 ns;
      
      --conun solo bit
      Valid_D <= '1', '0' after 300 ns,
