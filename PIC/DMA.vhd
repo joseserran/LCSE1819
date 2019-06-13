@@ -221,8 +221,8 @@ begin
      end if; 
          
      when comando_completo=>
-     Databus<="11111111";
-     address <= "00000011"; --volcamos a la direccion de memoria buffer LSB
+     Databus<="11111111"; --ponemos valor 0xFF
+     address <= "00000011"; --en registro NEW_INST de la RAM
      estado_s<=idle;
      write_en <= '1';--habilitacion de escritura para la ram
            
