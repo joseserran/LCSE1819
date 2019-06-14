@@ -1,0 +1,397 @@
+
+*** Running vivado
+    with args -log DMA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DMA.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source DMA.tcl -notrace
+Command: synth_design -top DMA -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10992 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 313.891 ; gain = 78.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DMA' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element peticion_send_comm_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'DMA' (1#1) [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:31]
+WARNING: [Synth 8-3331] design DMA has unconnected port RX_Full
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 352.902 ; gain = 117.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 352.902 ; gain = 117.234
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc]
+WARNING: [Vivado 12-584] No ports matched 'switches[0]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[1]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[2]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[3]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[4]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[5]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[6]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switches[7]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[0]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[1]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[2]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[3]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[4]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[5]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'temp[6]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp[0]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'disp[1]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RS232_TX'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RS232_RX'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DMA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DMA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 639.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 639.074 ; gain = 403.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 639.074 ; gain = 403.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 639.074 ; gain = 403.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'estado_a_reg' in module 'DMA'
+WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element estado_s_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:61]
+INFO: [Synth 8-5544] ROM "estado_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:61]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+          esperandoenvio |                             0001 |                             0001
+              enviodato1 |                             0010 |                             0111
+              enviodato2 |                             0011 |                             1000
+  pidiendobusesrecepcion |                             0100 |                             0010
+            lecturadato1 |                             0101 |                             0011
+            lecturadato2 |                             0110 |                             0100
+            lecturadato3 |                             0111 |                             0101
+              escribirff |                             1000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_a_reg' using encoding 'sequential' in module 'DMA'
+WARNING: [Synth 8-6014] Unused sequential element estado_s_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Read_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:83]
+WARNING: [Synth 8-327] inferring latch for variable 'Valid_D_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:79]
+WARNING: [Synth 8-327] inferring latch for variable 'TX_Data_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'Address_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'Databus_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'Write_en_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'OE_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'DMA_RQ_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:80]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 639.074 ; gain = 403.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 5     
+	   9 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DMA 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 5     
+	   9 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design DMA has unconnected port RX_Full
+INFO: [Synth 8-3886] merging instance 'Databus_regi_49' (LD) to 'Databus_regi_48'
+INFO: [Synth 8-3886] merging instance 'Databus_regi_48' (LD) to 'Databus_regi_47'
+INFO: [Synth 8-3886] merging instance 'Databus_regi_47' (LD) to 'Databus_regi_46'
+INFO: [Synth 8-3886] merging instance 'Databus_regi_46' (LD) to 'Databus_regi_45'
+INFO: [Synth 8-3886] merging instance 'Databus_regi_45' (LD) to 'Databus_regi_44'
+INFO: [Synth 8-3886] merging instance 'Databus_regi_44' (LD) to 'Databus_regi_43'
+INFO: [Synth 8-3886] merging instance 'Databus_regi_43' (LD) to 'Databus_regi_42'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (OE_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Write_en_reg)
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_33' (LD) to 'Address_reg__0i_32'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_32' (LD) to 'Address_reg__0i_31'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_31' (LD) to 'Address_reg__0i_30'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_30' (LD) to 'Address_reg__0i_29'
+INFO: [Synth 8-3886] merging instance 'Address_reg[3]' (LD) to 'Address_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_29' (LD) to 'Address_reg__0i_28'
+INFO: [Synth 8-3886] merging instance 'Address_reg[4]' (LD) to 'Address_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_28' (LD) to 'Address_reg__0i_27'
+INFO: [Synth 8-3886] merging instance 'Address_reg[5]' (LD) to 'Address_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_27' (LD) to 'Address_reg__0i_26'
+INFO: [Synth 8-3886] merging instance 'Address_reg[6]' (LD) to 'Address_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Address_reg[7] )
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_17' (LD) to 'TX_Data_reg__0i_16'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_16' (LD) to 'TX_Data_reg__0i_15'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_15' (LD) to 'TX_Data_reg__0i_14'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_14' (LD) to 'TX_Data_reg__0i_13'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_13' (LD) to 'TX_Data_reg__0i_12'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_12' (LD) to 'TX_Data_reg__0i_11'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_11' (LD) to 'TX_Data_reg__0i_10'
+WARNING: [Synth 8-3332] Sequential element (Address_reg[7]) is unused and will be removed from module DMA.
+WARNING: [Synth 8-3332] Sequential element (Write_en_reg) is unused and will be removed from module DMA.
+WARNING: [Synth 8-3332] Sequential element (OE_reg) is unused and will be removed from module DMA.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 639.074 ; gain = 403.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 639.074 ; gain = 403.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 639.074 ; gain = 403.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_53' (LD) to 'i_10'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 644.250 ; gain = 408.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.250 ; gain = 408.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.250 ; gain = 408.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.250 ; gain = 408.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.250 ; gain = 408.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.250 ; gain = 408.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.250 ; gain = 408.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     5|
+|3     |LUT2  |     7|
+|4     |LUT3  |     1|
+|5     |LUT4  |     8|
+|6     |LUT5  |    10|
+|7     |LUT6  |     3|
+|8     |FDCE  |     4|
+|9     |LD    |    30|
+|10    |IBUF  |    15|
+|11    |IOBUF |     8|
+|12    |OBUF  |     4|
+|13    |OBUFT |    18|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   114|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.250 ; gain = 408.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 644.250 ; gain = 122.410
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 644.250 ; gain = 408.582
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  LD => LDCE: 30 instances
+
+45 Infos, 42 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 647.633 ; gain = 419.727
+INFO: [Common 17-1381] The checkpoint 'C:/Users/joseangelSSD/Documents/LCSE1819/DMAsolo/DMAsolo.runs/synth_1/DMA.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 647.633 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 20:06:09 2019...

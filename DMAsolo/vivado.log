@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu May  9 19:46:12 2019
+# Process ID: 28456
+# Current directory: C:/Users/joseangelSSD/Documents/LCSE1819/DMAsolo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36020 C:\Users\joseangelSSD\Documents\LCSE1819\DMAsolo\DMAsolo.xpr
+# Log file: C:/Users/joseangelSSD/Documents/LCSE1819/DMAsolo/vivado.log
+# Journal file: C:/Users/joseangelSSD/Documents/LCSE1819/DMAsolo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/joseangelSSD/Documents/LCSE1819/DMAsolo/DMAsolo.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/joseangelSSD/Documents/LCSE1819/DMA' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 845.215 ; gain = 126.039
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 22:15:08 2019...
