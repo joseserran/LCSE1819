@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/DMAsolo/DMAsolo.sim/sim_1/synth/func/DMA_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA_tb

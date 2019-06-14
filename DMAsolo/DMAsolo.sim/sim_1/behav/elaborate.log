@@ -11,6 +11,7 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.pic_pkg
 Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
 Compiling architecture testbench of entity xil_defaultlib.dma_tb
 Built simulation snapshot DMA_tb_behav

@@ -3,7 +3,7 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.all;
 USE IEEE.numeric_std.all;
 
---USE work.PIC_pkg.all;
+USE work.PIC_pkg.all;
 
 entity DMA is
  Port(
@@ -108,7 +108,7 @@ begin
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
             data_read <= '1'; --peticion de lectura del rs232
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
-            address <= "00000010"; --volcamos a la direccion de memoria buffer LSB
+            address <= DMA_RX_BUFFER_LSB; --volcamos a la direccion de memoria buffer LSB
             Write_en <= '1';--habilitacion de escritura para la ram
             estado_s <= lecturaDato2;
     
@@ -117,7 +117,7 @@ begin
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
             data_read <= '1'; --peticion de lectura del rs232
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
-            address <= "00000001"; --volcamos a la direccion de memoria buffer middle byte
+            address <= DMA_RX_BUFFER_MID; --volcamos a la direccion de memoria buffer middle byte
             Write_en <= '1';--habilitacion de escritura para la ram
             estado_s <= lecturaDato3;
     
@@ -126,14 +126,14 @@ begin
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
             data_read <= '1'; --peticion de lectura del rs232
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
-            address <= "00000000"; --volcamos a la direccion de memoria buffer MSB
+            address <= DMA_RX_BUFFER_MSB; --volcamos a la direccion de memoria buffer MSB
             Write_en <= '1';--habilitacion de escritura para la ram
             estado_s <= escribirFF;
             
         when escribirFF =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
-            address <= "00000000"; --volcamos a la direccion de memoria NEW_INST
+            address <= NEW_INST; --volcamos a la direccion de memoria NEW_INST
             Databus <= "11111111"; --valor 0xFF
             Write_en <= '1';--habilitacion de escritura para la ram
             estado_s <= idle;

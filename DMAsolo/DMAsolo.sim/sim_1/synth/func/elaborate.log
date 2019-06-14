@@ -1,0 +1,48 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto da6d5d8f81024384b6b0fda14f9d9c5c --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DMA_tb_func_synth xil_defaultlib.DMA_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture obuft_v of entity unisim.OBUFT [\OBUFT(1,9,1,7,1,4)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture ldce_v of entity unisim.LDCE [ldce_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011001100110100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000011111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001010111")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101010001000111")(0...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9,1,7,1,4)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010001000100110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100010001000111")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100010001000001")(0...]
+Compiling architecture iobuf_v of entity unisim.IOBUF [\IOBUF(1,7,1,4)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000111100000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00100010001000100010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000111100001")(0...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010001000100010101...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010101000001000101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000001101")(0...]
+Compiling architecture structure of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture testbench of entity xil_defaultlib.dma_tb
+Built simulation snapshot DMA_tb_func_synth

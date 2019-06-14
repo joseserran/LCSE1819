@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Fri Jun 14 20:06:09 2019
+| Date         : Fri Jun 14 20:59:10 2019
 | Host         : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file DMA_utilization_synth.rpt -pb DMA_utilization_synth.pb
 | Design       : DMA
@@ -150,8 +150,8 @@ Table of Contents
 | OBUFT    |   26 |                  IO |
 | IBUF     |   23 |                  IO |
 | LUT5     |   10 |                 LUT |
-| LUT4     |    8 |                 LUT |
-| LUT2     |    7 |                 LUT |
+| LUT4     |   10 |                 LUT |
+| LUT2     |    5 |                 LUT |
 | LUT1     |    5 |                 LUT |
 | OBUF     |    4 |                  IO |
 | FDCE     |    4 |        Flop & Latch |

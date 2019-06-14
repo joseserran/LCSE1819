@@ -1,0 +1,42 @@
+Unable to capture context for thread 7976 in process 1780, can not generate back trace
+Unable to capture context for thread 5908 in process 1780, can not generate back trace
+Exception at PC 0x000007FE994EBB93
+Printing stacktrace...
+
+[0]  [0x000007FE994EBB93]
+[1]  [0x000007FE994EBB93]
+[2]  [0x000007FE994EB4A1]
+[3]  [0x000007FE994EB3EF]
+[4]  [0x000007FE994D19FE]
+[5]  [0x000007FE994D0ED1]
+[6]  [0x000007FE994D0D76]
+[7]  [0x000007FE994779F6]
+[8]  [0x000007FE99467AFB]
+[9]  [0x000007FE9958E90A]
+[10]  [0x000007FE995A9F87]
+[11]  [0x000007FE995AA05F]
+[12] (BaseThreadInitThunk+0xd) [0x0000000077A759ED]
+[13] (RtlUserThreadStart+0x21) [0x0000000077CAC541]
+Done
+Exception at PC 0x000007FE991F1A52
+Attemped to write at address 0x000007FED9ABABA4
+Printing stacktrace...
+
+[0]  [0x000007FE991F1A52]
+[1]  [0x000007FE991F1A52]
+[2]  [0x000007FE991F1AD4]
+[3]  [0x000007FE99333FF7]
+[4]  [0x000007FE99219128]
+[5]  [0x000007FE994CDFB9]
+[6]  [0x000007FE9969EF23]
+[7]  [0x000007FE995AB06B]
+[8]  [0x000007FE995A08AF]
+[9]  [0x000007FE995A0A32]
+[10] (LdrShutdownProcess+0x1d1) [0x0000000077CA43A1]
+[11] (RtlExitUserProcess+0x90) [0x0000000077CA41B0]
+[12] (wcstoui64+0x2fa) [0x000007FEFF8699E2]
+[13]  [0x00000000004014CD]
+[14]  [0x000000000040151B]
+[15] (BaseThreadInitThunk+0xd) [0x0000000077A759ED]
+[16] (RtlUserThreadStart+0x21) [0x0000000077CAC541]
+Done
