@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Jun 14 22:36:47 2019
+# Process ID: 8356
+# Current directory: C:/Users/joseangelSSD/Documents/LCSE1819/ALUsolo/ALUsolo.runs/synth_1
+# Command line: vivado.exe -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+# Log file: C:/Users/joseangelSSD/Documents/LCSE1819/ALUsolo/ALUsolo.runs/synth_1/ALU.vds
+# Journal file: C:/Users/joseangelSSD/Documents/LCSE1819/ALUsolo/ALUsolo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl -notrace

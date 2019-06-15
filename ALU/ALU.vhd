@@ -129,7 +129,7 @@ begin
 				end if;
 			
 			when op_oeacc => --output enable
-			
+			     databus <= acumulador; --???????????
 			
 			when nop =>
 				

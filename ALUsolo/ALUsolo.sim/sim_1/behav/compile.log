@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/ALU/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/ALU/ALU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_tb
