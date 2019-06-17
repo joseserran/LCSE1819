@@ -83,7 +83,7 @@ begin
              data_read <= '0'; --peticion de lectura de un nuevo dato desde el rs232
              tx_data <= "ZZZZZZZZ"; 
                
-             --version añadido en 14 de junio 2019
+             --version anadido en 14 de junio 2019
              if Send_comm = '1' then
                 READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
                 estado_s <= esperandoEnvio;
@@ -147,10 +147,10 @@ begin
         
         when envioDato1 =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento 
-            Address <= "00000101"; --byte menos significativo 
+            Address <= DMA_TX_BUFFER_LSB; --byte menos significativo 
             OE <= '0'; -- habilitacion de salida de la ram
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
-            Valid_d <= '0'; --Validación del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
+            Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
             if ACK_out = '1' then
                 estado_s <= envioDato2;
@@ -158,10 +158,10 @@ begin
             
         when envioDato2 =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento 
-            Address <= "00000100"; --byte mas significativo 
+            Address <= DMA_TX_BUFFER_MSB; --byte mas significativo 
             OE <= '0'; -- habilitacion de salida de la ram
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
-            Valid_d <= '0'; --Validación del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
+            Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
             if ACK_out = '1' then
                 estado_s <= idle;
