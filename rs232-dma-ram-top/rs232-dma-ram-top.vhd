@@ -6,7 +6,7 @@ library ieee;
 entity RS232dmaramtop is
 
   port (
-     Reset     : in  std_logic;   -- Low_level-active asynchronous reset
+     Reset     : in  std_logic   -- Low_level-active asynchronous reset
      
         );
         
@@ -38,7 +38,7 @@ architecture RTL of RS232dmaramtop is
   end component;
 
   ------------------------------------------------------------------------
-  -- Components for Receiver Block
+  -- Components for RAM Block
   ------------------------------------------------------------------------
 
   component RAM
@@ -54,6 +54,10 @@ architecture RTL of RS232dmaramtop is
         Temp_H   : out   std_logic_vector(6 downto 0)
     );
   end component;
+  
+  ------------------------------------------------------------------------
+  -- Components for DMA Block
+  ------------------------------------------------------------------------
 
 component DMA is
  Port(
@@ -97,12 +101,8 @@ begin  -- RTL
 
   --reset_p <= not(Reset);		  -- active high reset
   
-  top-triada: RS232dmaramtop
-    port map(
-    
-    );
 
-  rs232: RS232top
+  bloqueRS232: RS232top
     port map (
         Reset     => Reset     ,
         CLK100MHZ => CLK100MHZ ,
@@ -120,7 +120,7 @@ begin  -- RTL
         Empty     => Empty     );
 
 
-  rs232: RAM
+  bloqueRAM: RAM
     port map (
         Reset       =>  Reset   ,
         Clk         =>  Clk     ,
@@ -132,7 +132,7 @@ begin  -- RTL
         Temp_L      =>  Temp_L  ,
         Temp_H      =>  Temp_H  );
   
-  ram: DMA
+  bloqueDMA: DMA
     port map (
     Reset       =>  Reset        , 
     CLK100MHZ   =>  CLK100MHZ    , 
