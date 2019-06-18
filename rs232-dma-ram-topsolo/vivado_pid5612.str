@@ -1,0 +1,165 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 5612
+License: Customer
+
+Current time: 	6/18/19 4:59:50 AM CEST
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 4 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/Windows/Sun/Java/bin;C:/Windows/system32;C:/Windows;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Common Files/Oracle/Java/javapath;C:/ProgramData/Oracle/Java/javapath;C:/WinAVR-20100110/bin;C:/WinAVR-20100110/utils/bin;C:/Program Files (x86)/Common Files/Siemens/Sqlany;C:/Program Files (x86)/Siemens/Step7/S7bin;C:/Program Files/Common Files/Siemens/Automation/Simatic OAM/bin;C:/Program Files/Common Files/Microsoft Shared/Windows Live;C:/Program Files (x86)/Common Files/Microsoft Shared/Windows Live;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files/MATLAB/R2010a/runtime/win64;C:/Program Files/MATLAB/R2010a/bin;C:/Program Files (x86)/Windows Live/Shared;C:/Program Files (x86)/PKWARE/pkzipc;C:/Program Files (x86)/Microsoft SQL Server/90/Tools/binn/;C:/Program Files (x86)/Skype/Phone/;c:/cygwin64/bin;C:/Program Files/PuTTY/;C:/Python27;C:/Python27/Lib/site-packages;C:/Program Files (x86)/ClockworkMod/Universal Adb Driver;C:/Program Files/Git/cmd;C:/Users/joseangelSSD/Dropbox/aaa Mi MUISE 2018-2019/Spin;C:/Users/joseangelSSD/AppData/Local/Programs/Microsoft VS Code/bin;C:/Users/joseangelSSD/AppData/Local/GitHubDesktop/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	joseangelSSD
+User home directory: C:/Users/joseangelSSD
+User working directory: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/joseangelSSD/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/joseangelSSD/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/joseangelSSD/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/.Xil/Vivado-5612-joseangelSSD-PC
+
+GUI allocated memory:	189 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 504 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 42 MB (+42067kb) [00:00:15]
+// [Engine Memory]: 476 MB (+347822kb) [00:00:15]
+// Opening Vivado Project: C:\Users\joseangelSSD\Documents\LCSE1819\rs232-dma-ram-topsolo\rs232-dma-ram.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 505 MB (+4733kb) [00:00:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 505 MB. GUI used memory: 36 MB. Current time: 6/18/19 4:59:52 AM CEST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+5207kb) [00:00:21]
+// [GUI Memory]: 57 MB (+5139kb) [00:00:23]
+// [Engine Memory]: 543 MB (+14208kb) [00:00:23]
+// Tcl Message: open_project C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 796.418 ; gain = 49.184 
+// Project name: rs232-dma-ram; location: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// [GUI Memory]: 60 MB (+636kb) [00:00:27]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 66 MB (+2650kb) [00:00:31]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 21 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RS232dmaramtop(RTL) (rs232-dma-ram-top.vhd)]", 1); // B:i (D:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (rs232-dma-ram-top.vhd) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RS232dmaramtop(RTL) (rs232-dma-ram-top.vhd)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RS232dmaramtop(RTL) (rs232-dma-ram-top.vhd)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RS232dmaramtop(RTL) (rs232-dma-ram-top.vhd)]", 1); // B:i (D:JPanel, cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("rs232-dma-ram-top.vhd", 58, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 72 MB (+2915kb) [00:01:13]
+selectCodeEditor("rs232-dma-ram-top.vhd", 58, 183, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// [GUI Memory]: 77 MB (+1276kb) [00:01:40]
+// [Engine Memory]: 573 MB (+2871kb) [00:02:09]
+// Elapsed time: 162 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RS232dmaramtop(RTL) (rs232-dma-ram-top.vhd), bloqueRAM : ram(behavior) (RAM.vhd)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RS232dmaramtop(RTL) (rs232-dma-ram-top.vhd), bloqueRAM : ram(behavior) (RAM.vhd)]", 3, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, PICtop.xdc]", 7, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, PICtop.xdc]", 7, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 580 MB. GUI used memory: 43 MB. Current time: 6/18/19 5:03:42 AM CEST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rs232-dma-ram-top.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("RAM.vhd", 70, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 82 MB (+1364kb) [00:04:43]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 89 MB (+2560kb) [00:05:54]
+// Elapsed time: 96 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PICtop.xdc", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rs232-dma-ram-top.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 8); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, RS232dmaramtop_TB(Testbench) (tb_RS232-dma-ram-top.vhd)]", 10, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, RS232dmaramtop_TB(Testbench) (tb_RS232-dma-ram-top.vhd)]", 10, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// [GUI Memory]: 94 MB (+1042kb) [00:06:39]
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_RS232-dma-ram-top.vhd", 50, 178); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_RS232-dma-ram-top.vhd", 50, 178, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RAM.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 253 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rs232-dma-ram-top.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 301, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 280, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 242, 73); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 326, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 452, 215); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 100 MB (+971kb) [00:11:40]
+// Elapsed time: 55 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("rs232-dma-ram-top.vhd", 388, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_RS232-dma-ram-top.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("tb_RS232-dma-ram-top.vhd", 259, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_RS232-dma-ram-top.vhd", 242, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_RS232-dma-ram-top.vhd", 263, 191); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rs232-dma-ram-top.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("rs232-dma-ram-top.vhd", 383, 326); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 554, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 35, 76); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 37, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 146, 284); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("rs232-dma-ram-top.vhd", 76, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("rs232-dma-ram-top.vhd", 466, 52); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED

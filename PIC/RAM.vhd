@@ -91,14 +91,14 @@ Temp_L <=
     "0111111" when others;  -- 0
     
     
-switches(1) <= contents_ram(16) (0);
+switches(0) <= contents_ram(16) (0);
 switches(1) <= contents_ram(17) (0);
-switches(1) <= contents_ram(18) (0);
-switches(1) <= contents_ram(19) (0);
-switches(1) <= contents_ram(20) (0);
-switches(1) <= contents_ram(21) (0);
-switches(1) <= contents_ram(22) (0);
-switches(1) <= contents_ram(23) (0);
+switches(2) <= contents_ram(18) (0);
+switches(3) <= contents_ram(19) (0);
+switches(4) <= contents_ram(20) (0);
+switches(5) <= contents_ram(21) (0);
+switches(6) <= contents_ram(22) (0);
+switches(7) <= contents_ram(23) (0);
 
 -------------------------------------------------------------------------
 
