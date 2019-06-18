@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557396085">
-  <File Type="PWROPT-DRC" Name="RS232top_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="RS232top_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="RS232top_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="RS232top_power_routed.rpx"/>
   <File Type="PA-TCL" Name="RS232top.tcl"/>
-  <File Type="OPT-HWDEF" Name="RS232top.hwdef"/>
+  <File Type="INIT-TIMING" Name="RS232top_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="RS232top_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="RS232top_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="RS232top.vdi"/>
   <File Type="OPT-DCP" Name="RS232top_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="RS232top.hwdef"/>
   <File Type="OPT-DRC" Name="RS232top_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="RS232top_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="RS232top_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="RS232top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="RS232top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="RS232top_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="RS232top.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="RS232top_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="RS232top.drc"/>
+  <File Type="BG-BIN" Name="RS232top.bin"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="RS232top_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="RS232top.msk"/>
+  <File Type="BG-DRC" Name="RS232top.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RS232top_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="RS232top.bgn"/>
+  <File Type="BITSTR-MSK" Name="RS232top.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RS232top_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="RS232top.bgn"/>
   <File Type="ROUTE-PWR" Name="RS232top_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="RS232top_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="RS232top_route_status.rpt"/>

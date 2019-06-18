@@ -10,7 +10,7 @@ PORT (
    Reset    : in    std_logic;
    Clk      : in    std_logic;
    databus  : inout std_logic_vector(7 downto 0);
-   address  : in    std_logic_vector(3 downto 0);
+   address  : in    std_logic_vector(7 downto 0);--cambiado de 3 a 7
    write_en : in    std_logic;
    oe       : in    std_logic;
    switches : out   std_logic_vector(7 downto 0);
