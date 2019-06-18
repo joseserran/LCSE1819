@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="127586592179fs"></ZoomStartTime>
-      <ZoomEndTime time="695682681565fs"></ZoomEndTime>
-      <Cursor1Time time="601000000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="801000000001fs"></ZoomEndTime>
+      <Cursor1Time time="801000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="170"></NameColumnWidth>
-      <ValueColumnWidth column_width="107"></ValueColumnWidth>
+      <ValueColumnWidth column_width="99"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="28" />
+   <WVObjectSize size="38" />
    <wvobject fp_name="/RS232dmaramtop_TB/Reset" type="logic">
       <obj_property name="ElementShortName">Reset</obj_property>
       <obj_property name="ObjectShortName">Reset</obj_property>
@@ -43,6 +43,14 @@
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueDMA/TX_RDY" type="logic">
       <obj_property name="ElementShortName">TX_RDY</obj_property>
       <obj_property name="ObjectShortName">TX_RDY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Transmitter/eot" type="logic">
+      <obj_property name="ElementShortName">eot</obj_property>
+      <obj_property name="ObjectShortName">eot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Valid_D" type="logic">
+      <obj_property name="ElementShortName">Valid_D</obj_property>
+      <obj_property name="ObjectShortName">Valid_D</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/Send_comm" type="logic">
       <obj_property name="ElementShortName">Send_comm</obj_property>
@@ -68,6 +76,30 @@
       <obj_property name="ElementShortName">TD</obj_property>
       <obj_property name="ObjectShortName">TD</obj_property>
    </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Transmitter/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Data_FF" type="array">
+      <obj_property name="ElementShortName">Data_FF[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_FF[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Transmitter/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Transmitter/data_count" type="array">
+      <obj_property name="ElementShortName">data_count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">data_count[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueDMA/TX_Data" type="array">
+      <obj_property name="ElementShortName">TX_Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">TX_Data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Data_in" type="array">
+      <obj_property name="ElementShortName">Data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_in[7:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Transmitter/estado_a" type="other">
       <obj_property name="ElementShortName">estado_a</obj_property>
       <obj_property name="ObjectShortName">estado_a</obj_property>
@@ -88,6 +120,10 @@
       <obj_property name="ElementShortName">databus[7:0]</obj_property>
       <obj_property name="ObjectShortName">databus[7:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/address" type="array">
+      <obj_property name="ElementShortName">address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address[7:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/Temp_L" type="array">
       <obj_property name="ElementShortName">Temp_L[6:0]</obj_property>
       <obj_property name="ObjectShortName">Temp_L[6:0]</obj_property>
@@ -96,9 +132,13 @@
       <obj_property name="ElementShortName">Temp_H[6:0]</obj_property>
       <obj_property name="ObjectShortName">Temp_H[6:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/RS232dmaramtop_TB/UUT/address" type="array">
-      <obj_property name="ElementShortName">address[7:0]</obj_property>
-      <obj_property name="ObjectShortName">address[7:0]</obj_property>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[5]" type="array">
+      <obj_property name="ElementShortName">[5][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[4]" type="array">
+      <obj_property name="ElementShortName">[4][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[4][7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[3]" type="array">
       <obj_property name="ElementShortName">[3][7:0]</obj_property>

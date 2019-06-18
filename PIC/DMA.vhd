@@ -114,6 +114,7 @@ begin
             else
                 estado_s <= idle;
             end if;
+          
             
         when lecturaDato1 =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
@@ -127,6 +128,7 @@ begin
                 estado_s <= pidiendoBusesRecepcion;
                 contador_recepcion_s <= 2;
             end if;
+         
     
         when lecturaDato2 =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
@@ -140,7 +142,7 @@ begin
                 estado_s <= pidiendoBusesRecepcion;
                             contador_recepcion_s <= 3;
             end if;
-    
+         
         when lecturaDato3 =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
@@ -153,7 +155,7 @@ begin
                 estado_s <= escribirFF;
                             contador_recepcion_s <= 0;
             end if;
-            
+           
             
         when escribirFF =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
@@ -162,12 +164,14 @@ begin
             Databus <= "11111111"; --valor 0xFF
             Write_en <= '1';--habilitacion de escritura para la ram
             estado_s <= idle;
-            
+          
             
         when esperandoEnvio =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
-            Valid_d <= '1';
+            Valid_d <= '0';
+       
             if TX_RDY = '1' then
+            
                 if contador_envio = 1 then
                     estado_s <= envioDato1;
                 end if;
@@ -185,10 +189,10 @@ begin
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
-            if ACK_in = '0' and TX_RDY = '1' then --añadido TX_RDY = '1'
+            if ACK_in = '0' then -- and TX_RDY = '1' then --añadido TX_RDY = '1'
                 estado_s <= esperandoEnvio;
                 contador_envio_s <= 2;
-                Valid_d <= '1';
+                --Valid_d <= '1';
             end if;
             
         when envioDato2 =>
@@ -198,10 +202,10 @@ begin
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
-            if ACK_in = '0'and TX_RDY = '1' then
+            if ACK_in = '0' then --and TX_RDY = '1' then
                 estado_s <= idle;
                 contador_envio_s <= 1;
-                Valid_d <= '1';
+                --Valid_d <= '1';
             end if;
                  
         

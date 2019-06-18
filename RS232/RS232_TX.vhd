@@ -60,7 +60,7 @@ reloj: process (clk, reset)
             estado_a<=idle;
             data_count<=(others=>'0');
             pulse_width<=(others=>'0');
-        
+            
         elsif clk'event and clk='1' then
             estado_a <= estado_s;
             data_count<=data_siguiente;
@@ -73,7 +73,7 @@ estados: process(estado_a, start, data_count, pulse_width, data)
 begin
     --añadido para eliminar latches
         estado_s <= estado_a;
-        --tx<='1';--en espera se esta a nivel alto
+        tx<='1';--en espera se esta a nivel alto
         --eot<='1';--final de transmision
     --hasta aqui
         
@@ -94,8 +94,8 @@ begin
         end if;
         
      when startbit =>
-    tx<='0';--ponemos a nivel bajo la linea de transmision
-     eot<='0';--en transmision       
+     tx<='0';--ponemos a nivel bajo la linea de transmision
+     --eot<='0';--en transmision       
         if pulse_width = 173 then 
            estado_s <= senddata;--entramos en estado de mandar datos
 --           data_count<="0";--ponemos el contador de bits a cero ME HA DADO INIFNITOS PROBLEMAS 
@@ -110,7 +110,7 @@ begin
         
     when senddata=>
       tx<=data(to_integer(data_count));--pone el valor del tx al correspodiente dato
-      eot<='0';--en transmision
+      --eot<='0';--en transmision
         if pulse_width = 173 then
             if data_count=7 then 
             estado_s<=stopbit;
@@ -128,8 +128,8 @@ begin
         end if;
         
     when stopbit=>
-    eot<='0';--en transmision
-    tx<='1';--en espera se esta a nivel alto
+    --eot<='0';--en transmision
+    --tx<='1';--en espera se esta a nivel alto
         if pulse_width = 173 then
         estado_s<=idle;
 --        pulse_width<="00000000";--ancho de pulso a cero
