@@ -14,15 +14,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11608 
+INFO: Helper process launched with PID 9148 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 327.973 ; gain = 75.430
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 329.000 ; gain = 75.410
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'RS232dmaramtop' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:28]
 INFO: [Synth 8-3491] module 'RS232top' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:6' bound to instance 'bloqueRS232' of component 'RS232top' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:115]
 INFO: [Synth 8-638] synthesizing module 'RS232top' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:26]
-INFO: [Synth 8-3491] module 'Clk_Gen' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:5' bound to instance 'Clock_generator' of component 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:109]
-INFO: [Synth 8-638] synthesizing module 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Clk_Gen' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:5' bound to instance 'Clock_generator' of component 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:15]
 INFO: [Synth 8-3491] module 'RS232_TX' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:34' bound to instance 'Transmitter' of component 'RS232_TX' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:116]
 INFO: [Synth 8-638] synthesizing module 'RS232_TX' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'RS232_TX' (1#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:45]
@@ -32,19 +32,21 @@ INFO: [Synth 8-256] done synthesizing module 'RS232_RX' (2#1) [C:/Users/joseange
 INFO: [Synth 8-3491] module 'ShiftRegister' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:34' bound to instance 'Shift' of component 'ShiftRegister' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:134]
 INFO: [Synth 8-638] synthesizing module 'ShiftRegister' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:53]
 INFO: [Synth 8-256] done synthesizing module 'ShiftRegister' (3#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:53]
-INFO: [Synth 8-3491] module 'fifo' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/realtime/fifo_stub.vhdl:5' bound to instance 'Internal_memory' of component 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:144]
-INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/realtime/fifo_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'fifo' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/realtime/fifo_stub.vhdl:5' bound to instance 'Internal_memory' of component 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/realtime/fifo_stub.vhdl:19]
 INFO: [Synth 8-256] done synthesizing module 'RS232top' (4#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:26]
 INFO: [Synth 8-3491] module 'ram' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd:8' bound to instance 'bloqueRAM' of component 'RAM' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:133]
 INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'ram' (5#1) [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd:22]
 INFO: [Synth 8-3491] module 'DMA' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:8' bound to instance 'bloqueDMA' of component 'DMA' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:145]
 INFO: [Synth 8-638] synthesizing module 'DMA' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:31]
+WARNING: [Synth 8-614] signal 'contador_recepcion' is read in the process but is not in the sensitivity list [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:59]
+WARNING: [Synth 8-614] signal 'contador_envio' is read in the process but is not in the sensitivity list [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:59]
 INFO: [Synth 8-256] done synthesizing module 'DMA' (6#1) [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:31]
 INFO: [Synth 8-256] done synthesizing module 'RS232dmaramtop' (7#1) [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:28]
 WARNING: [Synth 8-3331] design DMA has unconnected port RX_Full
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 378.004 ; gain = 125.461
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 380.035 ; gain = 126.445
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -54,17 +56,17 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 378.004 ; gain = 125.461
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 380.035 ; gain = 126.445
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/dcp5/Clk_Gen_in_context.xdc] for cell 'bloqueRS232/Clock_generator'
-Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/dcp5/Clk_Gen_in_context.xdc] for cell 'bloqueRS232/Clock_generator'
-Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/dcp7/fifo_in_context.xdc] for cell 'bloqueRS232/Internal_memory'
-Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/dcp7/fifo_in_context.xdc] for cell 'bloqueRS232/Internal_memory'
+Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/dcp5/Clk_Gen_in_context.xdc] for cell 'bloqueRS232/Clock_generator'
+Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/dcp5/Clk_Gen_in_context.xdc] for cell 'bloqueRS232/Clock_generator'
+Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/dcp7/fifo_in_context.xdc] for cell 'bloqueRS232/Internal_memory'
+Finished Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/dcp7/fifo_in_context.xdc] for cell 'bloqueRS232/Internal_memory'
 Parsing XDC File [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc]
 WARNING: [Vivado 12-584] No ports matched 'temp[0]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:60]
 WARNING: [Vivado 12-584] No ports matched 'temp[1]'. [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc:61]
@@ -86,26 +88,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 696.930 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 696.895 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 696.930 ; gain = 444.387
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.895 ; gain = 443.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 696.930 ; gain = 444.387
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.895 ; gain = 443.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/dcp5/Clk_Gen_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-11060-joseangelSSD-PC/dcp5/Clk_Gen_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/dcp5/Clk_Gen_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/.Xil/Vivado-5800-joseangelSSD-PC/dcp5/Clk_Gen_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for bloqueRS232/Clock_generator. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for bloqueRS232/Internal_memory. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 696.930 ; gain = 444.387
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 696.895 ; gain = 443.305
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "estado_s" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "estado_s" won't be mapped to RAM because it is too sparse
@@ -212,40 +214,41 @@ INFO: [Synth 8-5546] ROM "contents_ram_reg[162]" won't be mapped to RAM because 
 INFO: [Synth 8-5546] ROM "contents_ram_reg[161]" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-802] inferred FSM for state register 'estado_a_reg' in module 'DMA'
-WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:46]
-WARNING: [Synth 8-6014] Unused sequential element estado_s_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element estado_s_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
+INFO: [Synth 8-5545] ROM "estado_s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "estado_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:46]
-WARNING: [Synth 8-327] inferring latch for variable 'estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:50]
-WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:46]
-WARNING: [Synth 8-327] inferring latch for variable 'estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    idle |                             0000 |                             0000
-          esperandoenvio |                             0001 |                             0001
-              enviodato1 |                             0010 |                             0111
-              enviodato2 |                             0011 |                             1000
-  pidiendobusesrecepcion |                             0100 |                             0010
-            lecturadato1 |                             0101 |                             0011
-            lecturadato2 |                             0110 |                             0100
-            lecturadato3 |                             0111 |                             0101
-              escribirff |                             1000 |                             0110
+                    idle |                        000000001 |                             0000
+          esperandoenvio |                        000000010 |                             0001
+              enviodato2 |                        000000100 |                             1000
+              enviodato1 |                        000001000 |                             0111
+  pidiendobusesrecepcion |                        000010000 |                             0010
+            lecturadato3 |                        000100000 |                             0101
+              escribirff |                        001000000 |                             0110
+            lecturadato2 |                        010000000 |                             0100
+            lecturadato1 |                        100000000 |                             0011
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'estado_a_reg' using encoding 'sequential' in module 'DMA'
-WARNING: [Synth 8-6014] Unused sequential element estado_s_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:50]
-WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:46]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:50]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Read_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:72]
-WARNING: [Synth 8-327] inferring latch for variable 'Valid_D_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:68]
-WARNING: [Synth 8-327] inferring latch for variable 'TX_Data_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:73]
-WARNING: [Synth 8-327] inferring latch for variable 'Address_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:66]
-WARNING: [Synth 8-327] inferring latch for variable 'Databus_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:67]
-WARNING: [Synth 8-327] inferring latch for variable 'Write_en_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:65]
-WARNING: [Synth 8-327] inferring latch for variable 'OE_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:64]
-WARNING: [Synth 8-327] inferring latch for variable 'DMA_RQ_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:69]
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_a_reg' using encoding 'one-hot' in module 'DMA'
+WARNING: [Synth 8-6014] Unused sequential element estado_s_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element estado_a_reg was removed.  [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_estado_s_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Read_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 'Valid_D_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 'TX_Data_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:81]
+WARNING: [Synth 8-327] inferring latch for variable 'Address_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Databus_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'Write_en_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'OE_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'DMA_RQ_reg' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:75]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 696.930 ; gain = 444.387
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 696.895 ; gain = 443.305
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -262,24 +265,28 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
+	               32 Bit    Registers := 2     
 	                8 Bit    Registers := 261   
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 3     
 +---Muxes : 
+	   9 Input     32 Bit        Muxes := 2     
+	  16 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 3     
 	   4 Input      8 Bit        Muxes := 1     
 	   9 Input      8 Bit        Muxes := 5     
 	   4 Input      4 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 1     
-	  12 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 4     
 	   5 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 9     
-	   2 Input      1 Bit        Muxes := 272   
-	   9 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 274   
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 16    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -337,12 +344,17 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 256   
 Module DMA 
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
 +---Muxes : 
+	   9 Input     32 Bit        Muxes := 2     
+	  16 Input      9 Bit        Muxes := 1     
 	   9 Input      8 Bit        Muxes := 5     
 	   9 Input      4 Bit        Muxes := 1     
-	  12 Input      4 Bit        Muxes := 1     
-	   9 Input      1 Bit        Muxes := 13    
-	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 14    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -358,39 +370,104 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "O70" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[30]' (FDCE) to 'bloqueDMA/contador_envio_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[31]' (FDCE) to 'bloqueDMA/contador_envio_reg[29]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[29]' (FDCE) to 'bloqueDMA/contador_envio_reg[28]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[28]' (FDCE) to 'bloqueDMA/contador_envio_reg[27]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[27]' (FDCE) to 'bloqueDMA/contador_envio_reg[26]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[26]' (FDCE) to 'bloqueDMA/contador_envio_reg[25]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[25]' (FDCE) to 'bloqueDMA/contador_envio_reg[24]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[24]' (FDCE) to 'bloqueDMA/contador_envio_reg[23]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[23]' (FDCE) to 'bloqueDMA/contador_envio_reg[22]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[22]' (FDCE) to 'bloqueDMA/contador_envio_reg[21]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[21]' (FDCE) to 'bloqueDMA/contador_envio_reg[20]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[20]' (FDCE) to 'bloqueDMA/contador_envio_reg[19]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[19]' (FDCE) to 'bloqueDMA/contador_envio_reg[18]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[18]' (FDCE) to 'bloqueDMA/contador_envio_reg[17]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[17]' (FDCE) to 'bloqueDMA/contador_envio_reg[16]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[16]' (FDCE) to 'bloqueDMA/contador_envio_reg[15]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[15]' (FDCE) to 'bloqueDMA/contador_envio_reg[14]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[14]' (FDCE) to 'bloqueDMA/contador_envio_reg[13]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[13]' (FDCE) to 'bloqueDMA/contador_envio_reg[12]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[12]' (FDCE) to 'bloqueDMA/contador_envio_reg[11]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[11]' (FDCE) to 'bloqueDMA/contador_envio_reg[10]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[10]' (FDCE) to 'bloqueDMA/contador_envio_reg[9]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[9]' (FDCE) to 'bloqueDMA/contador_envio_reg[8]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[8]' (FDCE) to 'bloqueDMA/contador_envio_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[7]' (FDCE) to 'bloqueDMA/contador_envio_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[6]' (FDCE) to 'bloqueDMA/contador_envio_reg[5]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[5]' (FDCE) to 'bloqueDMA/contador_envio_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[4]' (FDCE) to 'bloqueDMA/contador_envio_reg[3]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_envio_reg[3]' (FDCE) to 'bloqueDMA/contador_envio_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bloqueDMA/contador_envio_reg[2] )
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[30]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[29]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[28]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[27]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[26]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[25]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[24]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[23]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[22]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[21]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[20]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[19]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[18]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[17]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[16]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[15]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[14]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[13]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[12]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[11]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[10]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[9]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[8]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[7]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[6]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[5]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[4]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[3]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3886] merging instance 'bloqueDMA/contador_recepcion_reg[2]' (FDCE) to 'bloqueDMA/contador_recepcion_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bloqueDMA/contador_recepcion_reg[31] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bloqueDMA/Write_en_reg )
-INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_83' (LD) to 'Databus_reg__0i_82'
-INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_82' (LD) to 'Databus_reg__0i_81'
-INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_81' (LD) to 'Databus_reg__0i_80'
-INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_80' (LD) to 'Databus_reg__0i_79'
-INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_79' (LD) to 'Databus_reg__0i_78'
-INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_78' (LD) to 'Databus_reg__0i_77'
-INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_77' (LD) to 'Databus_reg__0i_76'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_17' (LD) to 'TX_Data_reg__0i_18'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_18' (LD) to 'TX_Data_reg__0i_19'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_19' (LD) to 'TX_Data_reg__0i_20'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_20' (LD) to 'TX_Data_reg__0i_21'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_21' (LD) to 'TX_Data_reg__0i_22'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_22' (LD) to 'TX_Data_reg__0i_23'
+INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_23' (LD) to 'TX_Data_reg__0i_24'
+INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_56' (LD) to 'Databus_reg__0i_55'
+INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_55' (LD) to 'Databus_reg__0i_54'
+INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_54' (LD) to 'Databus_reg__0i_53'
+INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_53' (LD) to 'Databus_reg__0i_52'
+INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_52' (LD) to 'Databus_reg__0i_51'
+INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_51' (LD) to 'Databus_reg__0i_50'
+INFO: [Synth 8-3886] merging instance 'Databus_reg__0i_50' (LD) to 'Databus_reg__0i_49'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bloqueDMA/OE_reg )
-INFO: [Synth 8-3886] merging instance 'Address_reg__0i_67' (LD) to 'Address_reg__0i_66'
-INFO: [Synth 8-3886] merging instance 'Address_reg__0i_66' (LD) to 'Address_reg__0i_65'
-INFO: [Synth 8-3886] merging instance 'Address_reg__0i_65' (LD) to 'Address_reg__0i_64'
-INFO: [Synth 8-3886] merging instance 'Address_reg__0i_64' (LD) to 'Address_reg__0i_63'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_40' (LD) to 'Address_reg__0i_39'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_39' (LD) to 'Address_reg__0i_38'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_38' (LD) to 'Address_reg__0i_37'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_37' (LD) to 'Address_reg__0i_36'
 INFO: [Synth 8-3886] merging instance 'bloqueDMA/Address_reg[3]' (LD) to 'bloqueDMA/Address_reg[6]'
-INFO: [Synth 8-3886] merging instance 'Address_reg__0i_63' (LD) to 'Address_reg__0i_62'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_36' (LD) to 'Address_reg__0i_35'
 INFO: [Synth 8-3886] merging instance 'bloqueDMA/Address_reg[4]' (LD) to 'bloqueDMA/Address_reg[6]'
-INFO: [Synth 8-3886] merging instance 'Address_reg__0i_62' (LD) to 'Address_reg__0i_61'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_35' (LD) to 'Address_reg__0i_34'
 INFO: [Synth 8-3886] merging instance 'bloqueDMA/Address_reg[5]' (LD) to 'bloqueDMA/Address_reg[6]'
-INFO: [Synth 8-3886] merging instance 'Address_reg__0i_61' (LD) to 'Address_reg__0i_60'
+INFO: [Synth 8-3886] merging instance 'Address_reg__0i_34' (LD) to 'Address_reg__0i_33'
 INFO: [Synth 8-3886] merging instance 'bloqueDMA/Address_reg[6]' (LD) to 'bloqueDMA/Address_reg[7]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bloqueDMA/Address_reg[7] )
-INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_51' (LD) to 'TX_Data_reg__0i_50'
-INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_50' (LD) to 'TX_Data_reg__0i_49'
-INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_49' (LD) to 'TX_Data_reg__0i_48'
-INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_48' (LD) to 'TX_Data_reg__0i_47'
-INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_47' (LD) to 'TX_Data_reg__0i_46'
-INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_46' (LD) to 'TX_Data_reg__0i_45'
-INFO: [Synth 8-3886] merging instance 'TX_Data_reg__0i_45' (LD) to 'TX_Data_reg__0i_44'
 WARNING: [Synth 8-3332] Sequential element (bloqueDMA/Address_reg[7]) is unused and will be removed from module RS232dmaramtop.
 WARNING: [Synth 8-3332] Sequential element (bloqueDMA/Write_en_reg) is unused and will be removed from module RS232dmaramtop.
 WARNING: [Synth 8-3332] Sequential element (bloqueDMA/OE_reg) is unused and will be removed from module RS232dmaramtop.
+WARNING: [Synth 8-3332] Sequential element (bloqueDMA/contador_recepcion_reg[31]) is unused and will be removed from module RS232dmaramtop.
+WARNING: [Synth 8-3332] Sequential element (bloqueDMA/contador_envio_reg[2]) is unused and will be removed from module RS232dmaramtop.
+INFO: [Synth 8-3886] merging instance 'i_58' (LD) to 'i_49'
+INFO: [Synth 8-3886] merging instance 'i_24' (LD) to 'i_60'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 696.930 ; gain = 444.387
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 696.895 ; gain = 443.305
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -404,13 +481,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'bloqueRS232/Clock_generator/clk_out1' to pin 'bloqueRS232/Clock_generator/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 696.930 ; gain = 444.387
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 697.559 ; gain = 443.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 713.762 ; gain = 461.219
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 716.719 ; gain = 463.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -421,9 +498,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'bloqueDMAi_87' (LD) to 'bloqueDMAi_44'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 726.918 ; gain = 474.375
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 730.191 ; gain = 476.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -447,7 +523,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 726.918 ; gain = 474.375
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 730.191 ; gain = 476.602
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -460,7 +536,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 726.918 ; gain = 474.375
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 730.191 ; gain = 476.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -472,25 +548,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 726.918 ; gain = 474.375
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 730.191 ; gain = 476.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 726.918 ; gain = 474.375
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 730.191 ; gain = 476.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 726.918 ; gain = 474.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 730.191 ; gain = 476.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 726.918 ; gain = 474.375
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 730.191 ; gain = 476.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -510,57 +586,56 @@ Report Cell Usage:
 +------+-------------+------+
 |1     |Clk_Gen_bbox |     1|
 |2     |fifo_bbox    |     1|
-|3     |LUT1         |    13|
-|4     |LUT2         |    88|
-|5     |LUT3         |    10|
-|6     |LUT4         |    77|
-|7     |LUT5         |    23|
-|8     |LUT6         |   827|
+|3     |LUT1         |    16|
+|4     |LUT2         |    93|
+|5     |LUT3         |    13|
+|6     |LUT4         |    69|
+|7     |LUT5         |    27|
+|8     |LUT6         |   843|
 |9     |MUXF7        |   272|
 |10    |MUXF8        |   136|
-|11    |FDCE         |   559|
-|12    |FDPE         |     2|
+|11    |FDCE         |   565|
+|12    |FDPE         |     5|
 |13    |FDRE         |  1545|
-|14    |LD           |    30|
-|15    |IBUF         |    12|
+|14    |LD           |    34|
+|15    |IBUF         |     4|
 |16    |IOBUF        |     8|
 |17    |OBUF         |    25|
-|18    |OBUFT        |     8|
 +------+-------------+------+
 
 Report Instance Areas: 
 +------+----------------+--------------+------+
 |      |Instance        |Module        |Cells |
 +------+----------------+--------------+------+
-|1     |top             |              |  3647|
-|2     |  bloqueDMA     |DMA           |   401|
-|3     |  bloqueRAM     |ram           |  3046|
-|4     |  bloqueRS232   |RS232top      |   124|
+|1     |top             |              |  3667|
+|2     |  bloqueDMA     |DMA           |   436|
+|3     |  bloqueRAM     |ram           |  3050|
+|4     |  bloqueRS232   |RS232top      |   123|
 |5     |    Receiver    |RS232_RX      |    44|
 |6     |    Shift       |ShiftRegister |    16|
 |7     |    Transmitter |RS232_TX      |    40|
 +------+----------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 726.918 ; gain = 474.375
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 730.191 ; gain = 476.602
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 726.918 ; gain = 155.449
-Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 726.918 ; gain = 474.375
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 730.191 ; gain = 159.742
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 730.191 ; gain = 476.602
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'RS232dmaramtop' is not ideal for floorplanning, since the cellview 'ram' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 38 instances were transformed.
+  A total of 42 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
-  LD => LDCE: 30 instances
+  LD => LDCE: 34 instances
 
-174 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+237 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 726.918 ; gain = 485.188
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 730.191 ; gain = 487.676
 INFO: [Common 17-1381] The checkpoint 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.runs/synth_1/RS232dmaramtop.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 726.918 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 18 05:17:10 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 730.191 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 18 23:12:33 2019...

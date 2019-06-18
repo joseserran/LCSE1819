@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Jun 18 05:19:30 2019
+| Date         : Tue Jun 18 23:18:13 2019
 | Host         : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file RS232dmaramtop_drc_routed.rpt -pb RS232dmaramtop_drc_routed.pb -rpx RS232dmaramtop_drc_routed.rpx
 | Design       : RS232dmaramtop
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 31
+             Violations found: 32
 +-----------+------------------+-----------------------------------------------------+------------+
 | Rule      | Severity         | Description                                         | Violations |
 +-----------+------------------+-----------------------------------------------------+------------+
@@ -32,7 +32,7 @@ Table of Contents
 | UCIO-1    | Critical Warning | Unconstrained Logical Port                          | 1          |
 | CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
 | CHECK-3   | Warning          | Report rule limit reached                           | 1          |
-| PDRC-153  | Warning          | Gated clock check                                   | 6          |
+| PDRC-153  | Warning          | Gated clock check                                   | 7          |
 | REQP-1840 | Warning          | RAMB18 async control check                          | 20         |
 | RTSTAT-10 | Warning          | No routable loads                                   | 1          |
 +-----------+------------------+-----------------------------------------------------+------------+
@@ -41,12 +41,12 @@ Table of Contents
 -----------------
 NSTD-1#1 Critical Warning
 Unspecified I/O Standard  
-44 out of 54 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: Data_in[7:0], databus[7:0], Temp_L[6:0], Temp_H[6:0], TX_Data[7:0], TD, RD, DMA_RQ, DMA_ACK, Send_comm, READY.
+28 out of 38 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: databus[7:0], Temp_L[6:0], Temp_H[6:0], TD, RD, DMA_RQ, DMA_ACK, Send_comm, READY.
 Related violations: <none>
 
 UCIO-1#1 Critical Warning
 Unconstrained Logical Port  
-44 out of 54 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: Data_in[7:0], databus[7:0], Temp_L[6:0], Temp_H[6:0], TX_Data[7:0], TD, RD, DMA_RQ, DMA_ACK, Send_comm, READY.
+28 out of 38 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: databus[7:0], Temp_L[6:0], Temp_H[6:0], TD, RD, DMA_RQ, DMA_ACK, Send_comm, READY.
 Related violations: <none>
 
 CFGBVS-1#1 Warning
@@ -74,17 +74,17 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net bloqueDMA/Data_Read_reg_i_2_n_0 is a gated clock net sourced by a combinational pin bloqueDMA/Data_Read_reg_i_2/O, cell bloqueDMA/Data_Read_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net bloqueDMA/Data_FF_reg[7][0] is a gated clock net sourced by a combinational pin bloqueDMA/TX_Data_reg[7]_i_1/O, cell bloqueDMA/TX_Data_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net bloqueDMA/E[0] is a gated clock net sourced by a combinational pin bloqueDMA/Valid_D_reg_i_2/O, cell bloqueDMA/Valid_D_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net bloqueDMA/Data_Read_reg_i_2_n_0 is a gated clock net sourced by a combinational pin bloqueDMA/Data_Read_reg_i_2/O, cell bloqueDMA/Data_Read_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net bloqueDMA/FSM_sequential_estado_s_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin bloqueDMA/FSM_sequential_estado_s_reg[3]_i_2/O, cell bloqueDMA/FSM_sequential_estado_s_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net bloqueDMA/Valid_D_reg_i_2_n_0 is a gated clock net sourced by a combinational pin bloqueDMA/Valid_D_reg_i_2/O, cell bloqueDMA/Valid_D_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#5 Warning
@@ -95,6 +95,11 @@ Related violations: <none>
 PDRC-153#6 Warning
 Gated clock check  
 Net bloqueDMA/contents_ram_reg[1][7]_0[0] is a gated clock net sourced by a combinational pin bloqueDMA/Databus_reg[7]_i_2/O, cell bloqueDMA/Databus_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net bloqueDMA/estado_s is a gated clock net sourced by a combinational pin bloqueDMA/FSM_onehot_estado_s_reg[8]_i_2/O, cell bloqueDMA/FSM_onehot_estado_s_reg[8]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 REQP-1840#1 Warning

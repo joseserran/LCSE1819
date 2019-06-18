@@ -46,10 +46,12 @@ reloj_ram: process(CLK100MHZ, reset)  -- no reset
        
            estado_a<=idle;
            contador_recepcion <= 1;
+           contador_envio <= 1;
                   
        elsif CLK100MHZ'event and CLK100MHZ='1' then
            estado_a <= estado_s;
            contador_recepcion <= contador_recepcion_s;
+           contador_envio <= contador_envio_s;
             
        end if;
 end process;
@@ -72,6 +74,8 @@ begin
              valid_D <= '1';
              DMA_RQ <= '0';
              
+             contador_recepcion_s <= 1;
+             contador_envio_s <= 1;
              
              data_read <= '0'; --peticion de lectura de un nuevo dato desde el rs232
              tx_data <= "ZZZZZZZZ"; 
@@ -162,8 +166,16 @@ begin
             
         when esperandoEnvio =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
+            Valid_d <= '1';
             if TX_RDY = '1' then
-                estado_s <= envioDato1;
+                if contador_envio = 1 then
+                    estado_s <= envioDato1;
+                end if;
+                
+                if contador_envio = 2 then
+                    estado_s <= envioDato2;
+                end if;
+                
             end if;
         
         when envioDato1 =>
@@ -173,8 +185,10 @@ begin
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
-            if ACK_in = '1' and TX_RDY = '1' then --añadido TX_RDY = '1'
-                estado_s <= envioDato2;
+            if ACK_in = '0' and TX_RDY = '1' then --añadido TX_RDY = '1'
+                estado_s <= esperandoEnvio;
+                contador_envio_s <= 2;
+                Valid_d <= '1';
             end if;
             
         when envioDato2 =>
@@ -184,8 +198,10 @@ begin
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
-            if ACK_in = '1'and TX_RDY = '1' then
+            if ACK_in = '0'and TX_RDY = '1' then
                 estado_s <= idle;
+                contador_envio_s <= 1;
+                Valid_d <= '1';
             end if;
                  
         

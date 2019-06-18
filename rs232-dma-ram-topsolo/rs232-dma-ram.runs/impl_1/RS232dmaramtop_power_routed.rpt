@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Tue Jun 18 05:19:34 2019
+| Date             : Tue Jun 18 23:18:16 2019
 | Host             : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file RS232dmaramtop_power_routed.rpt -pb RS232dmaramtop_power_summary_routed.pb -rpx RS232dmaramtop_power_routed.rpx
 | Design           : RS232dmaramtop
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.208 |
+| Total On-Chip Power (W)  | 0.207 |
 | Dynamic (W)              | 0.116 |
 | Device Static (W)        | 0.091 |
 | Effective TJA (C/W)      | 4.6   |
@@ -50,17 +50,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      352 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      121 |     63400 |            0.19 |
-|   Register     |    <0.001 |      172 |    126800 |            0.14 |
+| Slice Logic    |    <0.001 |      386 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      140 |     63400 |            0.22 |
+|   Register     |    <0.001 |      185 |    126800 |            0.15 |
 |   F7/F8 Muxes  |    <0.001 |        8 |     63400 |            0.01 |
 |   Others       |     0.000 |       28 |       --- |             --- |
-| Signals        |    <0.001 |      290 |       --- |             --- |
+| Signals        |    <0.001 |      305 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |       135 |            0.37 |
 | MMCM           |     0.112 |        1 |         6 |           16.67 |
-| I/O            |     0.002 |       54 |       210 |           25.71 |
+| I/O            |     0.002 |       38 |       210 |           18.10 |
 | Static Power   |     0.091 |          |           |                 |
-| Total          |     0.208 |          |           |                 |
+| Total          |     0.207 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 

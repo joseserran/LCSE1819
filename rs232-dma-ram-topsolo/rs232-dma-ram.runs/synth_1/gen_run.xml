@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1560827736">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1560892273">
   <File Type="RDS-PROPCONSTRS" Name="RS232dmaramtop_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="RS232dmaramtop.tcl"/>
   <File Type="RDS-RDS" Name="RS232dmaramtop.vds"/>

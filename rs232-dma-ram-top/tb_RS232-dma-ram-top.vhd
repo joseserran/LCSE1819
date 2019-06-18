@@ -12,7 +12,7 @@ architecture Testbench of RS232dmaramtop_TB is
     port (
     Reset     : in  std_logic;   -- Low_level-active asynchronous reset
     CLK100MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
-    Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
+    --Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
     --ACK_in    : out std_logic;   -- ACK for data received, low once data
     TD        : out std_logic;   -- RS232 Transmission line
     RD        : in  std_logic;   -- RS232 Reception line
@@ -27,7 +27,7 @@ architecture Testbench of RS232dmaramtop_TB is
     --RX_Full      : in    std_logic;
     --RX_Empty     : in    std_logic;
     --ACK_out      : in    std_logic;
-    TX_Data      : out    std_logic_vector(7 downto 0);
+    --TX_Data      : out    std_logic_vector(7 downto 0);
     DMA_RQ       : out    std_logic;
     DMA_ACK      : in     std_logic;
     Send_comm    : in    std_logic;
@@ -38,7 +38,7 @@ architecture Testbench of RS232dmaramtop_TB is
   
   signal Reset, Clk, DMA_RQ, DMA_ACK,Send_comm, READY : std_logic;--eliminado:TX_RDY, Data_read
   signal TD, RD : std_logic;
-  signal Data_in, switches,databus, TX_Data : std_logic_vector(7 downto 0);
+  signal  switches,databus : std_logic_vector(7 downto 0);
   signal Temp_L,Temp_H  : std_logic_vector(6 downto 0);
 
 begin
@@ -47,21 +47,21 @@ begin
     port map (
       Reset         => Reset    ,
       Clk100MHz     => Clk      ,
-      Data_in       => Data_in  ,
+      --Data_in       => Data_in  ,
       TD            => TD       ,
       RD            => RD       ,
       databus       => databus  ,
       switches      => switches ,
       Temp_L        => Temp_L   ,
       Temp_H        => Temp_H   ,
-      TX_Data       => TX_Data  ,
+      --TX_Data       => TX_Data  ,
       DMA_RQ        => DMA_RQ   ,
       DMA_ACK       => DMA_ACK  ,
       Send_comm     => Send_comm,
       READY         => READY
       );
 
-  Data_in <= "11100010";-- after 100000 ns;
+ -- Data_in <= "11100010";-- after 100000 ns;
   
   -- Clock generator
   p_clk : PROCESS

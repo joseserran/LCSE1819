@@ -8,14 +8,14 @@ entity RS232dmaramtop is
   port (
      Reset     : in  std_logic;   -- Low_level-active asynchronous reset
      CLK100MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
-     Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
+     --Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
      TD        : out std_logic;   -- RS232 Transmission line
      RD        : in  std_logic;   -- RS232 Reception line
      databus  : inout std_logic_vector(7 downto 0);
      switches : out   std_logic_vector(7 downto 0);
      Temp_L   : out   std_logic_vector(6 downto 0);
      Temp_H   : out   std_logic_vector(6 downto 0);
-     TX_Data      : out    std_logic_vector(7 downto 0);
+     --TX_Data      : out    std_logic_vector(7 downto 0);
      DMA_RQ       : out    std_logic;
      DMA_ACK      : in     std_logic;
      Send_comm    : in    std_logic;
@@ -105,7 +105,7 @@ end component;
     signal oe       : std_logic;
     signal ACK_flag    : std_logic;   -- ACK for data received, low once data
     signal RX_Empty, RX_Full    : std_logic;
-    signal Data_recibida : std_logic_vector(7 downto 0); --dato recibido por la linea RX
+    signal Data_recibida, Data_in : std_logic_vector(7 downto 0); --dato recibido por la linea RX
     
     
 begin  -- RTL
@@ -153,7 +153,7 @@ begin  -- RTL
         ACK_in     =>  ACK_flag      , 
         TX_RDY      =>  TX_RDY       , 
         Valid_D     =>  Valid_D      , 
-        TX_Data     =>  TX_Data      , 
+        TX_Data     =>  Data_in      , 
         Address     =>  Address      , 
         Databus     =>  Databus      , 
         Write_en    =>  Write_en     , 
