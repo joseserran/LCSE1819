@@ -11,15 +11,15 @@ entity RS232dmaramtop is
      Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
      --Valid_D   : in  std_logic;   -- Handshake signal
                                   -- from guest system, low when data is valid
-     ACK_in    : out std_logic;   -- ACK for data received, low once data
+     --ACK_in    : out std_logic;   -- ACK for data received, low once data
                                   -- has been stored
      --TX_RDY    : out std_logic;   -- System ready to transmit
      TD        : out std_logic;   -- RS232 Transmission line
      RD        : in  std_logic;   -- RS232 Reception line
-     Data_out  : out std_logic_vector(7 downto 0);  -- Received data
+     --Data_out  : out std_logic_vector(7 downto 0);  -- Received data
      --Data_read : in  std_logic;   -- Data read for guest system
-     Full      : out std_logic;   -- Full internal memory
-     Empty     : out std_logic;
+     --Full      : out std_logic;   -- Full internal memory
+     --Empty     : out std_logic;
      databus  : inout std_logic_vector(7 downto 0);
      --address  : in    std_logic_vector(3 downto 0);
      --write_en : in    std_logic;
@@ -27,11 +27,11 @@ entity RS232dmaramtop is
      switches : out   std_logic_vector(7 downto 0);
      Temp_L   : out   std_logic_vector(6 downto 0);
      Temp_H   : out   std_logic_vector(6 downto 0);
-     RCVD_Data    : in    std_logic_vector(7 downto 0);
-     RX_Full      : in    std_logic;
-     RX_Empty     : in    std_logic;
+     --RCVD_Data    : in    std_logic_vector(7 downto 0);
+     --RX_Full      : in    std_logic;
+     --RX_Empty     : in    std_logic;
      --Data_Read    : out    std_logic;
-     ACK_out      : in    std_logic;
+     --ACK_out      : in    std_logic;
      --TX_RDY       : in    std_logic;
      --Valid_D      : out    std_logic;
      TX_Data      : out    std_logic_vector(7 downto 0);
@@ -62,7 +62,7 @@ architecture RTL of RS232dmaramtop is
     Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
     Valid_D   : in  std_logic;   -- Handshake signal
                                  -- from guest system, low when data is valid
-    ACK_in    : out std_logic;   -- ACK for data received, low once data
+    ACK_out    : out std_logic;   -- ACK for data received, low once data
                                  -- has been stored
     TX_RDY    : out std_logic;   -- System ready to transmit
     TD        : out std_logic;   -- RS232 Transmission line
@@ -103,7 +103,7 @@ component DMA is
    RX_Full      : in    std_logic;
    RX_Empty     : in    std_logic;
    Data_Read    : out    std_logic;
-   ACK_out      : in    std_logic;
+   ACK_in      : in    std_logic;
    TX_RDY       : in    std_logic;
    Valid_D      : out    std_logic;
    TX_Data      : out    std_logic_vector(7 downto 0);
@@ -128,7 +128,11 @@ end component;
     signal address  : std_logic_vector(7 downto 0);
     signal write_en : std_logic;
     signal oe       : std_logic;
-
+    signal ACK_flag    : std_logic;   -- ACK for data received, low once data
+    signal RX_Empty, RX_Full    : std_logic;
+    signal Data_recibida : std_logic_vector(7 downto 0); --dato recibido por la linea RX
+    
+    
 begin  -- RTL
 
   --reset_p <= not(Reset);		  -- active high reset
@@ -141,15 +145,15 @@ begin  -- RTL
         Data_in   => Data_in   ,
         Valid_D   => Valid_D   ,
         
-        ACK_in    => ACK_in    ,
+        ACK_out    => ACK_flag    ,
     
         TX_RDY    => TX_RDY    ,
         TD        => TD        ,
         RD        => RD        ,
-        Data_out  => Data_out  ,
+        Data_out  => Data_recibida  ,
         Data_read => Data_read ,
-        Full      => Full      ,
-        Empty     => Empty     );
+        Full      => RX_Full      ,
+        Empty     => RX_Empty     );
 
 
   bloqueRAM: RAM
@@ -168,11 +172,11 @@ begin  -- RTL
     port map (
     Reset       =>  Reset        , 
     CLK100MHZ         =>  CLK100MHZ    , 
-    RCVD_Data   =>  RCVD_Data    , 
+    RCVD_Data   =>  Data_recibida    , 
     RX_Full     =>  RX_Full      , 
     RX_Empty    =>  RX_Empty     , 
     Data_Read   =>  Data_Read    , 
-    ACK_out     =>  ACK_out      , 
+    ACK_in     =>  ACK_flag      , 
     TX_RDY      =>  TX_RDY       , 
     Valid_D     =>  Valid_D      , 
     TX_Data     =>  TX_Data      , 

@@ -14,7 +14,7 @@ architecture Testbench of RS232top_TB is
       Clk100MHz       : in  std_logic;
       Data_in   : in  std_logic_vector(7 downto 0);
       Valid_D   : in  std_logic;
-      Ack_in    : out std_logic;
+      Ack_out    : out std_logic;
       TX_RDY    : out std_logic;
       TD        : out std_logic;
       RD        : in  std_logic;
@@ -24,7 +24,7 @@ architecture Testbench of RS232top_TB is
       Empty     : out std_logic);
   end component;
   
-  signal Reset, Clk, Valid_D, Ack_in, TX_RDY : std_logic;
+  signal Reset, Clk, Valid_D, Ack_out, TX_RDY : std_logic;
   signal TD, RD, Data_read, Full, Empty : std_logic;
   signal Data_out, Data_in : std_logic_vector(7 downto 0);
 
@@ -36,7 +36,7 @@ begin
       Clk100MHz       => Clk,
       Data_in   => Data_in,
       Valid_D   => Valid_D,
-      Ack_in    => Ack_in,
+      Ack_out    => Ack_out,
       TX_RDY    => TX_RDY,
       TD        => TD,
       RD        => RD,

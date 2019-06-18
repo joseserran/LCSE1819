@@ -11,7 +11,7 @@ entity RS232top is
     Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
     Valid_D   : in  std_logic;   -- Handshake signal
                                  -- from guest system, low when data is valid
-    ACK_in    : out std_logic;   -- ACK for data received, low once data
+    ACK_out    : out std_logic;   -- ACK for data received, low once data
                                  -- has been stored
     TX_RDY    : out std_logic;   -- System ready to transmit
     TD        : out std_logic;   -- RS232 Transmission line
@@ -158,15 +158,15 @@ begin  -- RTL
     if Reset = '0' then  -- asynchronous reset (active low)
       Data_FF   <= (others => '0');
       LineRD_in <= '1';
-      ACK_in    <= '1';
+      ACK_out    <= '1';
     elsif Clk'event and Clk = '1' then  -- rising edge clock
       LineRD_in <= RD;
       if Valid_D = '0' and TX_RDY_i = '1' then
         Data_FF <= Data_in;
-        ACK_in  <= '0';
+        ACK_out  <= '0';
         StartTX <= '1';
       else
-        ACK_in  <= '1';
+        ACK_out  <= '1';
         StartTX <= '0';
       end if;
     end if;
