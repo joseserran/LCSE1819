@@ -81,10 +81,10 @@ begin
     
 
 --concesion por parte del control princpal de buses a la DMA
-        DMA_ACK <= '0', '1' after 87 us,'0' after 300 us;--, '0' after 87010 ns, '1' after 187 us, '0' after 187010 ns, '1' after 287 us, '0' after 287010 ns; --despues de llegar los tres datos   
-     
+        DMA_ACK <= '0', '1' after 87 us,'0' after 88 us, '1' after 187 us, '0' after 188 us, '1' after 300 us,'0' after 300030 ns;-- '0' after 87010 ns, '1' after 187 us, '0' after 187010 ns, '1' after 287 us, '0' after 287010 ns; --despues de llegar los tres datos   
+
 --peticion porparte del ocntorl prncipal que envie datos
-          Send_comm <='0', '0' after 110 us,'0' after 250 ns, '0' after 400 us;
+          Send_comm <='0', '0' after 110 us,'1' after 350 us, '0' after 400 us;
           
           
  ----    un bit con mas retraso               

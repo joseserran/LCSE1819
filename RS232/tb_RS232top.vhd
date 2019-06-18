@@ -45,7 +45,7 @@ begin
       Full      => Full,
       Empty     => Empty);
 
-  Data_in <= "11100010";-- after 100000 ns;
+  Data_in <= "11100010", "00111100" after 200000 ns;
   
   -- Clock generator
   p_clk : PROCESS
@@ -83,7 +83,9 @@ begin
                 '1' after 400 ns,
                  '1' after 100000 ns,
                   '0' after 100110 ns,
-                '1' after 100400 ns;
+                '1' after 100400 ns,
+                '0' after 210 us,
+                '1' after 220us;
                 
           RD <= '1',
            '0' after 500 ns,    -- StartBit

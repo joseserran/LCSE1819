@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Jun 18 04:59:16 2019
-# Process ID: 5612
+# Start of session at: Tue Jun 18 12:02:41 2019
+# Process ID: 5084
 # Current directory: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10480 C:\Users\joseangelSSD\Documents\LCSE1819\rs232-dma-ram-topsolo\rs232-dma-ram.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13356 C:\Users\joseangelSSD\Documents\LCSE1819\rs232-dma-ram-topsolo\rs232-dma-ram.xpr
 # Log file: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/vivado.log
 # Journal file: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo\vivado.jou
 #-----------------------------------------------------------
@@ -16,5 +16,1702 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 796.418 ; gain = 49.184
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 827.043 ; gain = 89.598
 update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav/xsim.dir/RS232dmaramtop_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav/xsim.dir/RS232dmaramtop_TB_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jun 18 12:04:30 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Jun 18 12:04:30 2019...
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 827.043 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RS232dmaramtop_TB_behav -key {Behavioral:sim_1:Functional:RS232dmaramtop_TB} -tclbatch {RS232dmaramtop_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source RS232dmaramtop_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 827.043 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RS232dmaramtop_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 827.043 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 827.043 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 840.828 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 840.828 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 840.828 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 840.828 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 842.199 ; gain = 1.371
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 842.199 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 842.199 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 842.199 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 842.199 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 842.199 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 862.672 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 862.672 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 862.672 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 862.672 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 862.672 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 862.672 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 862.672 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 862.672 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 862.672 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 862.672 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 862.672 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 862.672 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 862.672 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 862.672 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 879.629 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 879.629 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 879.629 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 879.629 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 879.629 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 879.629 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 879.629 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 879.629 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 881.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 881.336 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 881.336 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 881.336 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 881.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 881.336 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 881.336 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 881.336 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 881.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 881.336 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 881.336 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 881.336 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'RS232dmaramtop_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RS232dmaramtop_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto dd5f14d2c87b41d99ca49f7423ce1af2 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot RS232dmaramtop_TB_behav xil_defaultlib.RS232dmaramtop_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.pic_pkg
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=8.5,...]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen_Clk_Gen_clk_wiz [clk_gen_clk_gen_clk_wiz_default]
+Compiling architecture structure of entity xil_defaultlib.Clk_Gen [clk_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_TX [rs232_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.RS232_RX [rs232_rx_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftRegister [shiftregister_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11110100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_status_flags_ss [fifo_rd_status_flags_ss_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_bin_cntr [fifo_rd_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_rd_logic [fifo_rd_logic_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_status_flags_ss [fifo_wr_status_flags_ss_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000010000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101010111111110100...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111101111101...]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_bin_cntr [fifo_wr_bin_cntr_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_wr_logic [fifo_wr_logic_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(ram_mode="SDP",read_wi...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_wrapper [fifo_blk_mem_gen_prim_wrapper_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_prim_width [fifo_blk_mem_gen_prim_width_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_generic_cstr [fifo_blk_mem_gen_generic_cstr_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_top [fifo_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6_synth [fifo_blk_mem_gen_v8_3_6_synth_de...]
+Compiling architecture structure of entity xil_defaultlib.fifo_blk_mem_gen_v8_3_6 [fifo_blk_mem_gen_v8_3_6_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_memory [fifo_memory_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_ramfifo [fifo_fifo_generator_ramfifo_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_top [fifo_fifo_generator_top_default]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4_synth [fifo_fifo_generator_v13_1_4_synt...]
+Compiling architecture structure of entity xil_defaultlib.fifo_fifo_generator_v13_1_4 [fifo_fifo_generator_v13_1_4_defa...]
+Compiling architecture structure of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232top [rs232top_default]
+Compiling architecture behavior of entity xil_defaultlib.ram [ram_default]
+Compiling architecture behavior of entity xil_defaultlib.DMA [dma_default]
+Compiling architecture rtl of entity xil_defaultlib.RS232dmaramtop [rs232dmaramtop_default]
+Compiling architecture testbench of entity xil_defaultlib.rs232dmaramtop_tb
+Built simulation snapshot RS232dmaramtop_TB_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 881.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 881.336 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 881.336 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 881.336 ; gain = 0.000
+run 600 us
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 881.336 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: RS232dmaramtop
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 970.965 ; gain = 89.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RS232dmaramtop' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:28]
+INFO: [Synth 8-3491] module 'RS232top' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:6' bound to instance 'bloqueRS232' of component 'RS232top' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'RS232top' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:26]
+INFO: [Synth 8-3491] module 'Clk_Gen' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/.Xil/Vivado-5084-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:5' bound to instance 'Clock_generator' of component 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'Clk_Gen' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/.Xil/Vivado-5084-joseangelSSD-PC/realtime/Clk_Gen_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'RS232_TX' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:34' bound to instance 'Transmitter' of component 'RS232_TX' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'RS232_TX' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'RS232_TX' (1#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd:45]
+INFO: [Synth 8-3491] module 'RS232_RX' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd:34' bound to instance 'Receiver' of component 'RS232_RX' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'RS232_RX' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'RS232_RX' (2#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd:45]
+INFO: [Synth 8-3491] module 'ShiftRegister' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:34' bound to instance 'Shift' of component 'ShiftRegister' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'ShiftRegister' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'ShiftRegister' (3#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd:53]
+INFO: [Synth 8-3491] module 'fifo' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/.Xil/Vivado-5084-joseangelSSD-PC/realtime/fifo_stub.vhdl:5' bound to instance 'Internal_memory' of component 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/.Xil/Vivado-5084-joseangelSSD-PC/realtime/fifo_stub.vhdl:19]
+INFO: [Synth 8-256] done synthesizing module 'RS232top' (4#1) [C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd:26]
+INFO: [Synth 8-3491] module 'ram' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd:8' bound to instance 'bloqueRAM' of component 'RAM' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ram' (5#1) [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd:22]
+INFO: [Synth 8-3491] module 'DMA' declared at 'C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:8' bound to instance 'bloqueDMA' of component 'DMA' [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'DMA' [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'DMA' (6#1) [C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'RS232dmaramtop' (7#1) [C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd:28]
+WARNING: [Synth 8-3331] design DMA has unconnected port RX_Full
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 982.840 ; gain = 101.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 982.840 ; gain = 101.504
+---------------------------------------------------------------------------------

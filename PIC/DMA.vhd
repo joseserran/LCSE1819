@@ -33,6 +33,7 @@ architecture behavior of DMA is
 type estados is (idle,esperandoEnvio,pidiendoBusesRecepcion,lecturaDato1,lecturaDato2,lecturaDato3,escribirFF,envioDato1, envioDato2);
 signal estado_a, estado_s : estados;
 signal dato_1_enviado, dato_2_enviado : std_logic := '0';
+signal contador_envio, contador_envio_s , contador_recepcion, contador_recepcion_s: integer := 0;
 
 
 begin
@@ -44,16 +45,19 @@ reloj_ram: process(CLK100MHZ, reset)  -- no reset
        if Reset = '0' then
        
            estado_a<=idle;
-           
+           contador_recepcion <= 1;
                   
        elsif CLK100MHZ'event and CLK100MHZ='1' then
            estado_a <= estado_s;
-         
+           contador_recepcion <= contador_recepcion_s;
+            
        end if;
 end process;
 
 FSM: process(estado_a,RX_empty, RX_Full,send_comm,TX_RDY, ACK_in,DMA_ACK,RCVD_Data, databus)
 begin
+    contador_recepcion_s <= contador_recepcion;
+    contador_envio_s <= contador_envio;
 
         
     case estado_a is
@@ -80,7 +84,7 @@ begin
              elsif RX_Empty = '0' then
                 READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
                 estado_s <= pidiendoBusesRecepcion;
-                
+                --contador igual a 0
              else
                 estado_s <= idle;
              end if;
@@ -88,8 +92,23 @@ begin
         when pidiendoBusesRecepcion =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
+            data_read <= '0'; --peticion de lectura del rs232
             if DMA_ACK = '1' and RX_Empty = '0'then
-                estado_s <= lecturaDato1;
+            
+                if contador_recepcion = 1 then
+                    estado_s <= lecturaDato1;
+                end if;
+                
+                if contador_recepcion = 2 then
+                    estado_s <= lecturaDato2;
+                end if;
+                
+                if contador_recepcion = 3 then
+                    estado_s <= lecturaDato3;
+                end if;
+                    
+            else
+                estado_s <= idle;
             end if;
             
         when lecturaDato1 =>
@@ -99,8 +118,10 @@ begin
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
             address <= DMA_RX_BUFFER_LSB; --volcamos a la direccion de memoria buffer LSB
             Write_en <= '1';--habilitacion de escritura para la ram
-            if DMA_ACK = '1' and RX_Empty = '0'then
-                estado_s <= lecturaDato2;
+            --si sigue activo la dma_ack y rx_se vacia
+            if DMA_ACK = '1' and RX_Empty = '1'then
+                estado_s <= pidiendoBusesRecepcion;
+                contador_recepcion_s <= 2;
             end if;
     
         when lecturaDato2 =>
@@ -110,8 +131,10 @@ begin
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
             address <= DMA_RX_BUFFER_MID; --volcamos a la direccion de memoria buffer middle byte
             Write_en <= '1';--habilitacion de escritura para la ram
-            if DMA_ACK = '1' and RX_Empty = '0'then
-                estado_s <= lecturaDato3;
+            
+            if DMA_ACK = '1' and RX_Empty = '1'then
+                estado_s <= pidiendoBusesRecepcion;
+                            contador_recepcion_s <= 3;
             end if;
     
         when lecturaDato3 =>
@@ -121,7 +144,12 @@ begin
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
             address <= DMA_RX_BUFFER_MSB; --volcamos a la direccion de memoria buffer MSB
             Write_en <= '1';--habilitacion de escritura para la ram
-            estado_s <= escribirFF;
+            
+            if DMA_ACK = '1' and RX_Empty = '1'then
+                estado_s <= escribirFF;
+                            contador_recepcion_s <= 0;
+            end if;
+            
             
         when escribirFF =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
@@ -145,7 +173,7 @@ begin
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
-            if ACK_in = '1' then
+            if ACK_in = '1' and TX_RDY = '1' then --añadido TX_RDY = '1'
                 estado_s <= envioDato2;
             end if;
             
@@ -156,7 +184,7 @@ begin
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
-            if ACK_in = '1' then
+            if ACK_in = '1'and TX_RDY = '1' then
                 estado_s <= idle;
             end if;
                  

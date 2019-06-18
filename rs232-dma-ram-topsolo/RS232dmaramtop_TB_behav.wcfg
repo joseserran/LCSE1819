@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RS232dmaramtop_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RS232dmaramtop_TB" />
+            <top_module name="pic_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="601000000001fs"></ZoomEndTime>
+      <Cursor1Time time="350000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="110"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/RS232dmaramtop_TB/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/DMA_RQ" type="logic">
+      <obj_property name="ElementShortName">DMA_RQ</obj_property>
+      <obj_property name="ObjectShortName">DMA_RQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/DMA_ACK" type="logic">
+      <obj_property name="ElementShortName">DMA_ACK</obj_property>
+      <obj_property name="ObjectShortName">DMA_ACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/ACK_flag" type="logic">
+      <obj_property name="ElementShortName">ACK_flag</obj_property>
+      <obj_property name="ObjectShortName">ACK_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueDMA/TX_RDY" type="logic">
+      <obj_property name="ElementShortName">TX_RDY</obj_property>
+      <obj_property name="ObjectShortName">TX_RDY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/Send_comm" type="logic">
+      <obj_property name="ElementShortName">Send_comm</obj_property>
+      <obj_property name="ObjectShortName">Send_comm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueDMA/estado_a" type="other">
+      <obj_property name="ElementShortName">estado_a</obj_property>
+      <obj_property name="ObjectShortName">estado_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueDMA/estado_s" type="other">
+      <obj_property name="ElementShortName">estado_s</obj_property>
+      <obj_property name="ObjectShortName">estado_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/RX_Empty" type="logic">
+      <obj_property name="ElementShortName">RX_Empty</obj_property>
+      <obj_property name="ObjectShortName">RX_Empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/READY" type="logic">
+      <obj_property name="ElementShortName">READY</obj_property>
+      <obj_property name="ObjectShortName">READY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/TD" type="logic">
+      <obj_property name="ElementShortName">TD</obj_property>
+      <obj_property name="ObjectShortName">TD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Transmitter/estado_a" type="other">
+      <obj_property name="ElementShortName">estado_a</obj_property>
+      <obj_property name="ObjectShortName">estado_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/RD" type="logic">
+      <obj_property name="ElementShortName">RD</obj_property>
+      <obj_property name="ObjectShortName">RD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRS232/Receiver/estado_a" type="other">
+      <obj_property name="ElementShortName">estado_a</obj_property>
+      <obj_property name="ObjectShortName">estado_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/Data_in" type="array">
+      <obj_property name="ElementShortName">Data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/switches" type="array">
+      <obj_property name="ElementShortName">switches[7:0]</obj_property>
+      <obj_property name="ObjectShortName">switches[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/databus" type="array">
+      <obj_property name="ElementShortName">databus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">databus[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/TX_Data" type="array">
+      <obj_property name="ElementShortName">TX_Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">TX_Data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/Temp_L" type="array">
+      <obj_property name="ElementShortName">Temp_L[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Temp_L[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/Temp_H" type="array">
+      <obj_property name="ElementShortName">Temp_H[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Temp_H[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[3]" type="array">
+      <obj_property name="ElementShortName">[3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[2]" type="array">
+      <obj_property name="ElementShortName">[2][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[1]" type="array">
+      <obj_property name="ElementShortName">[1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[0]" type="array">
+      <obj_property name="ElementShortName">[0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+   </wvobject>
+</wave_config>

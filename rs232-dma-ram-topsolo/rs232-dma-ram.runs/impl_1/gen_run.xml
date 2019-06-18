@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1560827835">
+  <File Type="PWROPT-DRC" Name="RS232dmaramtop_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="RS232dmaramtop_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="RS232dmaramtop_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="RS232dmaramtop_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="RS232dmaramtop.tcl"/>
+  <File Type="OPT-HWDEF" Name="RS232dmaramtop.hwdef"/>
+  <File Type="RDI-RDI" Name="RS232dmaramtop.vdi"/>
+  <File Type="OPT-DCP" Name="RS232dmaramtop_opt.dcp"/>
+  <File Type="OPT-DRC" Name="RS232dmaramtop_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="RS232dmaramtop_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="RS232dmaramtop_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="RS232dmaramtop_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="RS232dmaramtop_placed.dcp"/>
+  <File Type="PLACE-IO" Name="RS232dmaramtop_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="RS232dmaramtop_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="RS232dmaramtop_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="RS232dmaramtop_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="RS232dmaramtop_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="RS232dmaramtop_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="RS232dmaramtop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="RS232dmaramtop_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="RS232dmaramtop_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="RS232dmaramtop_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="RS232dmaramtop_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="RS232dmaramtop_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="RS232dmaramtop_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="RS232dmaramtop_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="RS232dmaramtop_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="RS232dmaramtop_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="RS232dmaramtop_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="RS232dmaramtop_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="RS232dmaramtop.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="RS232dmaramtop_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="RS232dmaramtop.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="RS232dmaramtop_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="RS232dmaramtop.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RS232dmaramtop_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="RS232dmaramtop.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RS232dmaramtop_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="RS232dmaramtop_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="RS232dmaramtop_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="RS232dmaramtop_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="RS232dmaramtop_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="RS232dmaramtop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="RS232dmaramtop_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="RS232dmaramtop_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="RS232dmaramtop_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="RS232dmaramtop_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="RS232dmaramtop_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="RS232dmaramtop_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="RS232dmaramtop_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="RS232dmaramtop_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="RS232dmaramtop_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="RS232dmaramtop.bit"/>
+  <File Type="BITSTR-RBT" Name="RS232dmaramtop.rbt"/>
+  <File Type="BITSTR-NKY" Name="RS232dmaramtop.nky"/>
+  <File Type="BITSTR-BMM" Name="RS232dmaramtop_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="RS232dmaramtop.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="RS232dmaramtop.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../PIC/PIC_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PIC/DMA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PIC/RAM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../RS232/RS232_RX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../RS232/RS232_TX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../RS232/RS232top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../RS232/ShiftRegister.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../rs232-dma-ram-top/rs232-dma-ram-top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RS232dmaramtop"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../PIC/PICtop.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Clk_Gen"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo"/>
+</GenRun>

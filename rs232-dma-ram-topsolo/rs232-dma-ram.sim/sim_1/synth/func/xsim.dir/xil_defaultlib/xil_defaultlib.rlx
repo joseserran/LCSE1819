@@ -1,0 +1,6 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd,1560853788,vhdl,,,,rs232dmaramtop_tb,,,,,,,,
+C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.sim/sim_1/synth/func/RS232dmaramtop_TB_func_synth.vhd,1560854717,vhdl,,,,clk_gen;clk_gen_clk_gen_clk_wiz;dma;fifo;fifo_blk_mem_gen_generic_cstr;fifo_blk_mem_gen_prim_width;fifo_blk_mem_gen_prim_wrapper;fifo_blk_mem_gen_top;fifo_blk_mem_gen_v8_3_6;fifo_blk_mem_gen_v8_3_6_synth;fifo_fifo_generator_ramfifo;fifo_fifo_generator_top;fifo_fifo_generator_v13_1_4;fifo_fifo_generator_v13_1_4_synth;fifo_memory;fifo_rd_bin_cntr;fifo_rd_logic;fifo_rd_status_flags_ss;fifo_wr_bin_cntr;fifo_wr_logic;fifo_wr_status_flags_ss;ram;rs232_rx;rs232_tx;rs232dmaramtop;rs232top;shiftregister,,,,,,,,

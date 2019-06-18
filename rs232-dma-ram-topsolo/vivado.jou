@@ -2,13 +2,39 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Jun 18 04:59:16 2019
-# Process ID: 5612
+# Start of session at: Tue Jun 18 12:02:41 2019
+# Process ID: 5084
 # Current directory: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10480 C:\Users\joseangelSSD\Documents\LCSE1819\rs232-dma-ram-topsolo\rs232-dma-ram.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13356 C:\Users\joseangelSSD\Documents\LCSE1819\rs232-dma-ram-topsolo\rs232-dma-ram.xpr
 # Log file: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/vivado.log
 # Journal file: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.xpr
 update_compile_order -fileset sources_1
+launch_simulation
+source RS232dmaramtop_TB.tcl
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+relaunch_sim
+run 600 us
+synth_design -rtl -name rtl_1
