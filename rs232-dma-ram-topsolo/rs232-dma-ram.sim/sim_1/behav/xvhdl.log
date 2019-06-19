@@ -35,5 +35,5 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE181
 INFO: [VRFC 10-307] analyzing entity ShiftRegister
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/tbCLK20MHZ_RS232-dma-ram-top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity RS232dmaramtop_TB

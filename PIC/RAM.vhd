@@ -36,7 +36,9 @@ if reset = '0' then
     for direccion in 0 to 63 loop
      contents_ram(direccion) <= "00000000"; --se pone a cero todo este bloque de memoria
      end loop;
-     
+     --eliminar siguientes dos lineas
+     contents_ram(5) <= "00011100";
+     contents_ram(4) <= "10101010";
 elsif clk'event and clk = '1' then
 
     if write_en = '1' then

@@ -9,7 +9,7 @@ vhdl xil_defaultlib  "../../../../RS232/RS232_TX.vhd"
 vhdl xil_defaultlib  "../../../../RS232/RS232top.vhd"
 vhdl xil_defaultlib  "../../../../RS232/ShiftRegister.vhd"
 vhdl xil_defaultlib  "../../../../rs232-dma-ram-top/rs232-dma-ram-top.vhd"
-vhdl xil_defaultlib  "../../../../rs232-dma-ram-top/tb_RS232-dma-ram-top.vhd"
+vhdl xil_defaultlib  "../../../../rs232-dma-ram-top/tbCLK20MHZ_RS232-dma-ram-top.vhd"
 
 # Do not sort compile order
 nosort

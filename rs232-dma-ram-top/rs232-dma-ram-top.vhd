@@ -8,6 +8,7 @@ entity RS232dmaramtop is
   port (
      Reset     : in  std_logic;   -- Low_level-active asynchronous reset
      CLK100MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
+     CLK20MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
      --Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
      TD        : out std_logic;   -- RS232 Transmission line
      RD        : in  std_logic;   -- RS232 Reception line
@@ -35,8 +36,9 @@ architecture RTL of RS232dmaramtop is
   component RS232top
     port (
         Reset     : in  std_logic;   -- Low_level-active asynchronous reset
-        CLK100MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
-        Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
+        CLK100MHZ : in  std_logic;   -- System clock (100MHz), rising edge used
+        CLK20MHZ  : out  std_logic;   -- System clock (20MHz), rising edge used
+        Data_in   : inout  std_logic_vector(7 downto 0);  -- Data to be sent
         Valid_D   : in  std_logic;   -- Handshake signal
         ACK_out    : out std_logic;   -- ACK for data received, low once data
         TX_RDY    : out std_logic;   -- System ready to transmit
@@ -73,7 +75,8 @@ architecture RTL of RS232dmaramtop is
 component DMA is
  Port(
            Reset        : in    std_logic;
-           CLK100MHZ    : in    std_logic;
+           --CLK100MHZ    : in    std_logic;
+           CLK         : in    std_logic;
            RCVD_Data    : in    std_logic_vector(7 downto 0);
            RX_Full      : in    std_logic;
            RX_Empty     : in    std_logic;
@@ -106,16 +109,18 @@ end component;
     signal ACK_flag    : std_logic;   -- ACK for data received, low once data
     signal RX_Empty, RX_Full    : std_logic;
     signal Data_recibida, Data_in : std_logic_vector(7 downto 0); --dato recibido por la linea RX
-    
+    SIGNAL CLK : STD_LOGIC;
     
 begin  -- RTL
-
+    
+    --CLK20MHZ => CLK;
   
 
   bloqueRS232: RS232top
     port map (
         Reset     => Reset     ,
         CLK100MHZ => CLK100MHZ ,
+        clk20MHZ   => clk,
         Data_in   => Data_in   ,
         Valid_D   => Valid_D   ,
         
@@ -133,7 +138,7 @@ begin  -- RTL
   bloqueRAM: RAM
     port map (
         Reset       =>  Reset   ,
-        Clk         =>  CLK100MHZ     ,
+        Clk         =>  CLK     ,
         databus     =>  databus ,
         address     =>  address ,
         write_en    =>  write_en,
@@ -145,7 +150,7 @@ begin  -- RTL
   bloqueDMA: DMA
     port map (
         Reset       =>  Reset        , 
-        CLK100MHZ         =>  CLK100MHZ    , 
+        CLK         =>  CLK    , 
         RCVD_Data   =>  Data_recibida    , 
         RX_Full     =>  RX_Full      , 
         RX_Empty    =>  RX_Empty     , 

@@ -7,7 +7,8 @@ entity RS232top is
 
   port (
     Reset     : in  std_logic;   -- Low_level-active asynchronous reset
-    CLK100MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
+    CLK100MHZ : in  std_logic;   -- System clock (100MHz), rising edge used
+    CLK20MHZ  : out  std_logic;   -- System clock (20MHz), rising edge used
     Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
     Valid_D   : in  std_logic;   -- Handshake signal
                                  -- from guest system, low when data is valid
@@ -29,7 +30,7 @@ architecture RTL of RS232top is
   -- Component for Clock Frequency modification
   ------------------------------------------------------------------------
 
-  signal Clk, reset_p    : std_logic;
+  signal reset_p    : std_logic;
 
   component Clk_Gen
     port (
@@ -101,9 +102,12 @@ architecture RTL of RS232top is
   signal Fifo_in    : std_logic_vector(7 downto 0);
   signal Fifo_write : std_logic;
   signal TX_RDY_i   : std_logic;
-
+  signal clk : std_logic;
+  
 begin  -- RTL
-
+    
+  CLK20MHZ <= CLK;
+    
   reset_p <= not(Reset);		  -- active high reset
   
   Clock_generator : Clk_Gen

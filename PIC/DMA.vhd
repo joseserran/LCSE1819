@@ -8,7 +8,7 @@ USE work.PIC_pkg.all;
 entity DMA is
  Port(
    Reset        : in    std_logic;
-   CLK100MHZ          : in    std_logic;
+   CLK          : in    std_logic;
    RCVD_Data    : in    std_logic_vector(7 downto 0);
    RX_Full      : in    std_logic;
    RX_Empty     : in    std_logic;
@@ -38,7 +38,7 @@ signal contador_envio, contador_envio_s , contador_recepcion, contador_recepcion
 
 begin
 
-reloj_ram: process(CLK100MHZ, reset)  -- no reset
+reloj_ram: process(CLK, reset)  -- no reset
 
     begin
 
@@ -48,7 +48,7 @@ reloj_ram: process(CLK100MHZ, reset)  -- no reset
            contador_recepcion <= 1;
            contador_envio <= 1;
                   
-       elsif CLK100MHZ'event and CLK100MHZ='1' then
+       elsif CLK'event and CLK='1' then
            estado_a <= estado_s;
            contador_recepcion <= contador_recepcion_s;
            contador_envio <= contador_envio_s;
@@ -60,7 +60,7 @@ FSM: process(estado_a,RX_empty, RX_Full,send_comm,TX_RDY, ACK_in,DMA_ACK,RCVD_Da
 begin
     contador_recepcion_s <= contador_recepcion;
     contador_envio_s <= contador_envio;
-
+    tx_data <= "ZZZZZZZZ"; 
         
     case estado_a is
     
@@ -74,8 +74,8 @@ begin
              valid_D <= '1';
              DMA_RQ <= '0';
              
-             contador_recepcion_s <= 1;
-             contador_envio_s <= 1;
+--             contador_recepcion_s <= 1;
+--             contador_envio_s <= 1;
              
              data_read <= '0'; --peticion de lectura de un nuevo dato desde el rs232
              tx_data <= "ZZZZZZZZ"; 
@@ -153,7 +153,7 @@ begin
             
             if DMA_ACK = '1' and RX_Empty = '1'then
                 estado_s <= escribirFF;
-                            contador_recepcion_s <= 0;
+                contador_recepcion_s <= 0;
             end if;
            
             
@@ -168,8 +168,8 @@ begin
             
         when esperandoEnvio =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
-            Valid_d <= '0';
-       
+            Valid_d <= '1';
+            TX_DATA <= Databus;
             if TX_RDY = '1' then
             
                 if contador_envio = 1 then
