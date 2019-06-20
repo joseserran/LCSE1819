@@ -119,7 +119,7 @@ begin  -- RTL
     port map (
         Reset     => Reset     ,
         CLK100MHZ => CLK100MHZ ,
-        CLK20MHZ   => clk,
+        CLK20MHZ   => CLK       ,
         Data_in   => Data_in   ,
         Valid_D   => Valid_D   ,
         

@@ -102,7 +102,7 @@ architecture RTL of RS232top is
   signal Fifo_in    : std_logic_vector(7 downto 0);
   signal Fifo_write : std_logic;
   signal TX_RDY_i   : std_logic;
-  signal clk : std_logic;
+  signal CLK : std_logic;
   
 begin  -- RTL
     

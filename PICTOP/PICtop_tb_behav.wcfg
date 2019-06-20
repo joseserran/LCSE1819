@@ -13,12 +13,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="418302352001fs"></ZoomEndTime>
-      <Cursor1Time time="122830000000fs"></Cursor1Time>
+      <ZoomEndTime time="801000000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="170"></NameColumnWidth>
-      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+      <ValueColumnWidth column_width="71"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="19" />
    <wvobject fp_name="/PICtop_tb/Reset" type="logic">

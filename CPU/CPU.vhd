@@ -17,7 +17,7 @@ USE work.PIC_pkg.all;
 entity CPU is
   Port (
   reset :in std_logic;
-  clk: in std_logic;
+  CLK: in std_logic;
   -- ROM
   rom_data: in std_logic_vector (11 downto 0);
   rom_addr: out std_logic_vector (11 downto 0);
@@ -76,10 +76,11 @@ signal temporal_sig : std_logic_vector (11 downto 0);
 
 begin
 
-Reloj:process(clk,reset)
+Reloj_cpu : process(CLK,reset)
 begin
     if reset = '0' then 
         estado_a <= idle;
+        
         cont_programa <= X"000";
         
         flag_tipo <='0';
@@ -92,7 +93,7 @@ begin
 
 
         
-    elsif clk'event and clk='1' then 
+    elsif CLK'event and CLK='1' then 
         estado_a <= estado_s;
         cont_programa <= cont_sig;
         
@@ -112,7 +113,8 @@ Siguiente: process(estado_a,dma_rq,flag_fetch,flag_tipo,flag_done, flag_sig)--,f
 begin
     case estado_a is
     when idle=> 
-        if dma_rq='1' then estado_s<=dar_bus;
+        if dma_rq='1' then
+         estado_s<=dar_bus;
         elsif (dma_rq='0') then estado_s<=fetch;
         else estado_s<=idle;
         end if;

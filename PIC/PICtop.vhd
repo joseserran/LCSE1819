@@ -59,7 +59,7 @@ component ALU is
 component CPU is
   Port (
       reset         : in std_logic;
-      clk           : in std_logic;
+      CLK           : in std_logic;
       
       rom_data      : in std_logic_vector (11 downto 0);
       rom_addr      : out std_logic_vector (11 downto 0);
@@ -106,14 +106,14 @@ component ROM is
  
  signal databus , address : std_logic_vector (7 downto 0);
  SIGNAL command_alu   : alu_op;      
-    
+ 
 begin  -- behavior
 
   rs232dmaramtop_bloque: RS232dmaramtop
     port map (
         Reset       =>  Reset     ,
         CLK100MHZ   =>  CLK100MHZ ,
-        CLK20MHZ    =>  clk  ,
+        CLK20MHZ    =>  CLK  ,
         TD          =>  RS232_TX        ,
         RD          =>  RS232_RX        ,
         databus     =>  databus   ,
@@ -144,7 +144,7 @@ begin  -- behavior
   CPU_bloque: CPU
           port map (
           reset         =>  reset      ,
-          clk           =>  clk        ,
+          CLK           =>  CLK        ,
              
           rom_data      =>  rom_data   ,
           rom_addr      =>  rom_addr   ,
