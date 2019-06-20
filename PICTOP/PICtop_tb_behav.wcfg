@@ -14,13 +14,13 @@
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
       <ZoomEndTime time="801000000001fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <Cursor1Time time="469480000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="170"></NameColumnWidth>
-      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="20" />
    <wvobject fp_name="/PICtop_tb/Reset" type="logic">
       <obj_property name="ElementShortName">Reset</obj_property>
       <obj_property name="ObjectShortName">Reset</obj_property>
@@ -28,6 +28,10 @@
    <wvobject fp_name="/PICtop_tb/Clk" type="logic">
       <obj_property name="ElementShortName">Clk</obj_property>
       <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueRS232/CLK20MHZ" type="logic">
+      <obj_property name="ElementShortName">CLK20MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK20MHZ</obj_property>
    </wvobject>
    <wvobject fp_name="/PICtop_tb/RS232_RX" type="logic">
       <obj_property name="ElementShortName">RS232_RX</obj_property>

@@ -112,7 +112,7 @@ end component;
     
 begin  -- RTL
     
-    --CLK20MHZ => CLK;
+    CLK20MHZ <= CLK;
   
 
   bloqueRS232: RS232top

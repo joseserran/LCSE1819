@@ -98,7 +98,7 @@ component ROM is
 -----------------------------------------------------------------------    
 
 
- signal FlagZ, FlagC ,FlagN, FlagE, CLK, DMA_RQ, DMA_ACK, Send_comm , READY, oe, write_en : STD_LOGIC;
+ signal FlagZ, FlagC ,FlagN, FlagE, CLK, DMA_RQ, DMA_ACK, Send_comm , READY, oe, write_en, CLK20MHZ: STD_LOGIC;
  
  signal rom_addr, rom_DATA : STD_LOGIC_vector (11 downto 0);
  
