@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu Jun 20 13:15:54 2019
-# Process ID: 11776
+# Start of session at: Thu Jun 20 13:46:34 2019
+# Process ID: 13236
 # Current directory: C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/impl_1
 # Command line: vivado.exe -log RS232top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RS232top.tcl -notrace
 # Log file: C:/Users/joseangelSSD/Documents/LCSE1819/RS232TOP/RS232TOP.runs/impl_1/RS232top.vdi

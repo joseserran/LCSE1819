@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Jun 18 23:12:33 2019
+| Date         : Thu Jun 20 15:37:23 2019
 | Host         : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file RS232dmaramtop_utilization_synth.rpt -pb RS232dmaramtop_utilization_synth.pb
 | Design       : RS232dmaramtop
@@ -30,12 +30,12 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  980 |     0 |     63400 |  1.55 |
-|   LUT as Logic          |  980 |     0 |     63400 |  1.55 |
+| Slice LUTs*             |  975 |     0 |     63400 |  1.54 |
+|   LUT as Logic          |  975 |     0 |     63400 |  1.54 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         | 2149 |     0 |    126800 |  1.69 |
-|   Register as Flip Flop | 2115 |     0 |    126800 |  1.67 |
-|   Register as Latch     |   34 |     0 |    126800 |  0.03 |
+| Slice Registers         | 2126 |     0 |    126800 |  1.68 |
+|   Register as Flip Flop | 2116 |     0 |    126800 |  1.67 |
+|   Register as Latch     |   10 |     0 |    126800 | <0.01 |
 | F7 Muxes                |  272 |     0 |     31700 |  0.86 |
 | F8 Muxes                |  136 |     0 |     15850 |  0.86 |
 +-------------------------+------+-------+-----------+-------+
@@ -54,8 +54,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 5     |          Yes |           - |          Set |
-| 599   |          Yes |           - |        Reset |
+| 12    |          Yes |           - |          Set |
+| 569   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 1545  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   38 |     0 |       210 | 18.10 |
+| Bonded IOB                  |   37 |     0 |       210 | 17.62 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -147,20 +147,20 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     | 1545 |        Flop & Latch |
-| LUT6     |  843 |                 LUT |
-| FDCE     |  565 |        Flop & Latch |
+| LUT6     |  839 |                 LUT |
+| FDCE     |  559 |        Flop & Latch |
 | MUXF7    |  272 |               MuxFx |
 | MUXF8    |  136 |               MuxFx |
-| LUT2     |   93 |                 LUT |
-| LUT4     |   69 |                 LUT |
-| LDCE     |   34 |        Flop & Latch |
-| LUT5     |   27 |                 LUT |
+| LUT2     |  101 |                 LUT |
+| LUT4     |   71 |                 LUT |
 | OBUF     |   25 |                  IO |
-| LUT1     |   16 |                 LUT |
-| LUT3     |   13 |                 LUT |
-| IBUF     |   13 |                  IO |
+| LUT5     |   17 |                 LUT |
+| LUT1     |   17 |                 LUT |
+| LUT3     |   14 |                 LUT |
+| IBUF     |   12 |                  IO |
+| FDPE     |   12 |        Flop & Latch |
+| LDCE     |   10 |        Flop & Latch |
 | OBUFT    |    8 |                  IO |
-| FDPE     |    5 |        Flop & Latch |
 +----------+------+---------------------+
 
 

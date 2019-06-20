@@ -2,3 +2,6 @@ Running: xsim.dir/RS232top_TB_behav/xsimk.exe -simmode gui -wdb RS232top_TB_beha
 Design successfully loaded
 Design Loading Memory Usage: 8144 KB (Peak: 8144 KB)
 Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 13576 KB (Peak: 13576 KB)
+Simulation CPU Usage: 21824 ms

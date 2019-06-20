@@ -2,87 +2,28 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Jun 18 19:19:20 2019
-# Process ID: 9572
+# Start of session at: Thu Jun 20 15:21:33 2019
+# Process ID: 13196
 # Current directory: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7740 C:\Users\joseangelSSD\Documents\LCSE1819\rs232-dma-ram-topsolo\rs232-dma-ram.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7912 C:\Users\joseangelSSD\Documents\LCSE1819\rs232-dma-ram-topsolo\rs232-dma-ram.xpr
 # Log file: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/vivado.log
 # Journal file: C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.xpr
 update_compile_order -fileset sources_1
+remove_files  -fileset constrs_1 C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/PICtoptriada.xdc
 synth_design -rtl -name rtl_1
-launch_simulation
-launch_simulation
-source RS232dmaramtop_TB.tcl
-close_sim
-load_feature simulator
-open_wave_database {C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg}
-launch_simulation
-source RS232dmaramtop_TB.tcl
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg
-close_sim
-launch_simulation
-open_wave_config C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg
-source RS232dmaramtop_TB.tcl
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
-save_wave_config {C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg}
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-relaunch_sim
-run 600 us
-refresh_design
-refresh_design
-relaunch_sim
-run 600 us
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
-relaunch_sim
-close_sim
-launch_simulation
-open_wave_config C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg
-source RS232dmaramtop_TB.tcl
-run 600 us
-relaunch_sim
-run 600 us
-refresh_design
-relaunch_sim
-run 600 us
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
-launch_runs impl_1 -jobs 2
+reset_run synth_1
+refresh_design
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
+close_design
 open_run impl_1
-relaunch_sim
-run 600 us
-save_wave_config {C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg}
-close_sim

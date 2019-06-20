@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -64,7 +63,7 @@ set rc [catch {
   set_property is_locked true [get_files C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/Clk_Gen/Clk_Gen.xci]
   read_ip -quiet C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo.xci
   set_property is_locked true [get_files C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.srcs/sources_1/ip/fifo/fifo.xci]
-  read_xdc C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.xdc
+  read_xdc C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/PICtoptriada.xdc
   link_design -top RS232dmaramtop -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -133,6 +132,25 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  catch { write_mem_info -force RS232dmaramtop.mmi }
+  write_bitstream -force RS232dmaramtop.bit 
+  catch {write_debug_probes -no_partial_ltxfile -quiet -force debug_nets}
+  catch {file copy -force debug_nets.ltx RS232dmaramtop.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

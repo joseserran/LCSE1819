@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Tue Jun 18 23:18:16 2019
+| Date             : Thu Jun 20 15:39:25 2019
 | Host             : joseangelSSD-PC running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file RS232dmaramtop_power_routed.rpt -pb RS232dmaramtop_power_summary_routed.pb -rpx RS232dmaramtop_power_routed.rpx
 | Design           : RS232dmaramtop
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.207 |
-| Dynamic (W)              | 0.116 |
-| Device Static (W)        | 0.091 |
+| Total On-Chip Power (W)  | 0.211 |
+| Dynamic (W)              | 0.114 |
+| Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 84.1  |
-| Junction Temperature (C) | 25.9  |
+| Max Ambient (C)          | 84.0  |
+| Junction Temperature (C) | 26.0  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,18 +49,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      386 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      140 |     63400 |            0.22 |
-|   Register     |    <0.001 |      185 |    126800 |            0.15 |
+| Clocks         |    <0.001 |        8 |       --- |             --- |
+| Slice Logic    |    <0.001 |      376 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      136 |     63400 |            0.21 |
+|   Register     |    <0.001 |      160 |    126800 |            0.13 |
 |   F7/F8 Muxes  |    <0.001 |        8 |     63400 |            0.01 |
-|   Others       |     0.000 |       28 |       --- |             --- |
-| Signals        |    <0.001 |      305 |       --- |             --- |
+|   Others       |     0.000 |       44 |       --- |             --- |
+| Signals        |    <0.001 |      283 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |       135 |            0.37 |
 | MMCM           |     0.112 |        1 |         6 |           16.67 |
-| I/O            |     0.002 |       38 |       210 |           18.10 |
-| Static Power   |     0.091 |          |           |                 |
-| Total          |     0.207 |          |           |                 |
+| I/O            |     0.001 |       38 |       210 |           18.10 |
+| Static Power   |     0.097 |          |           |                 |
+| Total          |     0.211 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,11 +70,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
+| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
 | Vccaux    |       1.800 |     0.080 |       0.062 |      0.018 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.005 |       0.001 |      0.004 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -123,14 +123,16 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+------------------+---------------------------------------------------+-----------------+
-| Clock            | Domain                                            | Constraint (ns) |
-+------------------+---------------------------------------------------+-----------------+
-| clk_out1_Clk_Gen | bloqueRS232/Clock_generator/inst/clk_out1_Clk_Gen |            50.0 |
-| clkfbout_Clk_Gen | bloqueRS232/Clock_generator/inst/clkfbout_Clk_Gen |            10.0 |
-| sys_clk_pin      | CLK100MHZ                                         |            10.0 |
-| sys_clk_pin      | CLK100MHZ_IBUF_BUFG                               |            10.0 |
-+------------------+---------------------------------------------------+-----------------+
++--------------------+---------------------------------------------------+-----------------+
+| Clock              | Domain                                            | Constraint (ns) |
++--------------------+---------------------------------------------------+-----------------+
+| CLK100MHZ          | CLK100MHZ                                         |            10.0 |
+| clk_out1_Clk_Gen   | bloqueRS232/Clock_generator/inst/clk_out1_Clk_Gen |            50.0 |
+| clk_out1_Clk_Gen_1 | bloqueRS232/Clock_generator/inst/clk_out1_Clk_Gen |            50.0 |
+| clkfbout_Clk_Gen   | bloqueRS232/Clock_generator/inst/clkfbout_Clk_Gen |            10.0 |
+| clkfbout_Clk_Gen_1 | bloqueRS232/Clock_generator/inst/clkfbout_Clk_Gen |            10.0 |
+| sys_clk_pin        | CLK100MHZ                                         |            10.0 |
++--------------------+---------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -142,10 +144,10 @@ Table of Contents
 +----------------------------------------------------------+-----------+
 | Name                                                     | Power (W) |
 +----------------------------------------------------------+-----------+
-| RS232dmaramtop                                           |     0.116 |
+| RS232dmaramtop                                           |     0.114 |
 |   bloqueDMA                                              |    <0.001 |
 |   bloqueRAM                                              |    <0.001 |
-|   bloqueRS232                                            |     0.113 |
+|   bloqueRS232                                            |     0.112 |
 |     Clock_generator                                      |     0.112 |
 |       inst                                               |     0.112 |
 |     Internal_memory                                      |    <0.001 |

@@ -47,6 +47,8 @@ reloj_ram: process(CLK, reset)  -- no reset
            estado_a<=idle;
            contador_recepcion <= 1;
            contador_envio <= 1;
+           Address <= "ZZZZZZZZ";--libera el uso de la direccion de memoria, en espera en alta impedancia
+           Databus <= "ZZZZZZZZ";--libera bus de datos del sistema, en espera en alta impedancia
                   
        elsif CLK'event and CLK='1' then
            estado_a <= estado_s;
@@ -56,11 +58,13 @@ reloj_ram: process(CLK, reset)  -- no reset
        end if;
 end process;
 
-FSM: process(estado_a,RX_empty, RX_Full,send_comm,TX_RDY, ACK_in,DMA_ACK,RCVD_Data, databus)
+FSM: process(estado_a,RX_empty, RX_Full,send_comm,TX_RDY, ACK_in,DMA_ACK,RCVD_Data, databus,contador_recepcion_s, contador_envio_s)
 begin
     contador_recepcion_s <= contador_recepcion;
     contador_envio_s <= contador_envio;
-    tx_data <= "ZZZZZZZZ"; 
+    --para eliminar latches
+    Address <= "ZZZZZZZZ";--libera el uso de la direccion de memoria, en espera en alta impedancia
+    Databus <= "ZZZZZZZZ";--libera bus de datos del sistema, en espera en alta impedancia 
         
     case estado_a is
     
@@ -95,9 +99,15 @@ begin
     
         when pidiendoBusesRecepcion =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
+            Address <= "ZZZZZZZZ";--libera el uso de la direccion de memoria, en espera en alta impedancia
+            Databus <= "ZZZZZZZZ";--libera bus de datos del sistema, en espera en alta impedancia
+            tx_data <= "ZZZZZZZZ";
+            valid_D <= '1';
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
             data_read <= '0'; --peticion de lectura del rs232
             Write_en <= '0';--no escribimos en la ram mientras pedimos buses
+            OE <= 'Z';--en espera OE en alta impedancia
+            
             if DMA_ACK = '1' and RX_Empty = '0'then
             
                 if contador_recepcion = 1 then
@@ -119,11 +129,15 @@ begin
             
         when lecturaDato1 =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
+            valid_D <= '1';
+            tx_data <= "ZZZZZZZZ";
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
             data_read <= '1'; --peticion de lectura del rs232
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
             address <= DMA_RX_BUFFER_LSB; --volcamos a la direccion de memoria buffer LSB
             Write_en <= '1';--habilitacion de escritura para la ram
+            OE <= 'Z';--en espera OE en alta impedancia
+            
             --si sigue activo la dma_ack y rx_se vacia
             if DMA_ACK = '1' and RX_Empty = '1'then
                 estado_s <= pidiendoBusesRecepcion;--volvemos a idle para darle prioridad al envio de datos
@@ -133,11 +147,14 @@ begin
     
         when lecturaDato2 =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
+            valid_D <= '1';
+            tx_data <= "ZZZZZZZZ";
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
             data_read <= '1'; --peticion de lectura del rs232
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
             address <= DMA_RX_BUFFER_MID; --volcamos a la direccion de memoria buffer middle byte
             Write_en <= '1';--habilitacion de escritura para la ram
+            OE <= 'Z';--en espera OE en alta impedancia
             
             if DMA_ACK = '1' and RX_Empty = '1'then
                 estado_s <= pidiendoBusesRecepcion;--volvemos a idle para darle prioridad al envio de datos
@@ -146,11 +163,14 @@ begin
          
         when lecturaDato3 =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
+            valid_D <= '1';
+            tx_data <= "ZZZZZZZZ";
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
             data_read <= '1'; --peticion de lectura del rs232
             Databus<=RCVD_Data; --volcamos datos leidos en el bus de datos
             address <= DMA_RX_BUFFER_MSB; --volcamos a la direccion de memoria buffer MSB
             Write_en <= '1';--habilitacion de escritura para la ram
+            OE <= 'Z';--en espera OE en alta impedancia
             
             if DMA_ACK = '1' and RX_Empty = '1'then
                 estado_s <= escribirFF;
@@ -160,17 +180,27 @@ begin
             
         when escribirFF =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
+            valid_D <= '1';
+            tx_data <= "ZZZZZZZZ";
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
+            data_read <= '0'; --peticion de lectura del rs232
             address <= NEW_INST; --volcamos a la direccion de memoria NEW_INST
             Databus <= "11111111"; --valor 0xFF
             Write_en <= '1';--habilitacion de escritura para la ram
+            OE <= 'Z';--en espera OE en alta impedancia
             estado_s <= idle;
           
             
         when esperandoEnvio =>
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
             Valid_d <= '1';
+            Address <= "ZZZZZZZZ";--libera el uso de la direccion de memoria, en espera en alta impedancia
+            data_read <= '0'; --peticion de lectura del rs232
             TX_DATA <= Databus;
+            Write_en <= '0';--no escribimos en la ram
+            OE <= 'Z';--en espera OE en alta impedancia
+            DMA_RQ <= '0';
+            
             if TX_RDY = '1' then
             
                 if contador_envio = 1 then
@@ -189,11 +219,14 @@ begin
             end if;
         
         when envioDato1 =>
-            READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento 
+            READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
+            data_read <= '0'; --peticion de lectura del rs232 
             Address <= DMA_TX_BUFFER_LSB; --byte menos significativo 
             OE <= '0'; -- habilitacion de salida de la ram
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
+            Write_en <= '0';--no escribimos en la ram 
+            DMA_RQ <= '0';
             
             if ACK_in = '0' then -- and TX_RDY = '1' then --añadido TX_RDY = '1'
                 estado_s <= esperandoEnvio;--volviendo a idle desde aqui esperamos con buses en alta impedancia en vez de con el dato mantenido
@@ -202,11 +235,14 @@ begin
             end if;
             
         when envioDato2 =>
-            READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento 
+            READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
+            data_read <= '0'; --peticion de lectura del rs232 
             Address <= DMA_TX_BUFFER_MSB; --byte mas significativo 
             OE <= '0'; -- habilitacion de salida de la ram
             TX_DATA <= Databus; --volcamos databus en datos a mandar a rs232
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
+            Write_en <= '0';--no escribimos en la ram 
+            DMA_RQ <= '0';
             
             if ACK_in = '0' then --and TX_RDY = '1' then
                 estado_s <= idle;
