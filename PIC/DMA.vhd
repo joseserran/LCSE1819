@@ -97,6 +97,7 @@ begin
             READY <= '0';--DMA en uso, ponermos a 0 durante funcionamiento
             DMA_RQ <= '1'; --se mantiene al procesador solicitud de uso de buses
             data_read <= '0'; --peticion de lectura del rs232
+            Write_en <= '0';--no escribimos en la ram mientras pedimos buses
             if DMA_ACK = '1' and RX_Empty = '0'then
             
                 if contador_recepcion = 1 then
@@ -111,8 +112,8 @@ begin
                     estado_s <= lecturaDato3;
                 end if;
                     
-            else
-                estado_s <= idle;
+--            else
+--                estado_s <= idle;
             end if;
           
             
@@ -125,7 +126,7 @@ begin
             Write_en <= '1';--habilitacion de escritura para la ram
             --si sigue activo la dma_ack y rx_se vacia
             if DMA_ACK = '1' and RX_Empty = '1'then
-                estado_s <= pidiendoBusesRecepcion;
+                estado_s <= pidiendoBusesRecepcion;--volvemos a idle para darle prioridad al envio de datos
                 contador_recepcion_s <= 2;
             end if;
          
@@ -139,7 +140,7 @@ begin
             Write_en <= '1';--habilitacion de escritura para la ram
             
             if DMA_ACK = '1' and RX_Empty = '1'then
-                estado_s <= pidiendoBusesRecepcion;
+                estado_s <= pidiendoBusesRecepcion;--volvemos a idle para darle prioridad al envio de datos
                             contador_recepcion_s <= 3;
             end if;
          
@@ -153,7 +154,7 @@ begin
             
             if DMA_ACK = '1' and RX_Empty = '1'then
                 estado_s <= escribirFF;
-                contador_recepcion_s <= 0;
+                contador_recepcion_s <= 1;
             end if;
            
             
@@ -180,6 +181,11 @@ begin
                     estado_s <= envioDato2;
                 end if;
                 
+                --descomentando lo siguiente hacemos que el envio de datos no sea uno tras otro, dependiendo de que la
+                --unidad principal de control mantenga en alto la señal "send_comm"
+--             else
+--                 estado_s <= idle;
+                
             end if;
         
         when envioDato1 =>
@@ -190,7 +196,7 @@ begin
             Valid_d <= '0'; --Validacion del dato de entrada por parte del sistema cliente. Activa a nivel bajo.
             
             if ACK_in = '0' then -- and TX_RDY = '1' then --añadido TX_RDY = '1'
-                estado_s <= esperandoEnvio;
+                estado_s <= esperandoEnvio;--volviendo a idle desde aqui esperamos con buses en alta impedancia en vez de con el dato mantenido
                 contador_envio_s <= 2;
                 --Valid_d <= '1';
             end if;

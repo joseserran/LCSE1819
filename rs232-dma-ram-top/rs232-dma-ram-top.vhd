@@ -8,7 +8,7 @@ entity RS232dmaramtop is
   port (
      Reset     : in  std_logic;   -- Low_level-active asynchronous reset
      CLK100MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
-     CLK20MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
+    -- CLK20MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
      --Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
      TD        : out std_logic;   -- RS232 Transmission line
      RD        : in  std_logic;   -- RS232 Reception line

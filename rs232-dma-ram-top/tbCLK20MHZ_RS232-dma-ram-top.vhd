@@ -12,7 +12,7 @@ architecture Testbench of RS232dmaramtop_TB is
     port (
     Reset     : in  std_logic;   -- Low_level-active asynchronous reset
     CLK100MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
-    CLK20MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
+    --CLK20MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
     --Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
     --ACK_in    : out std_logic;   -- ACK for data received, low once data
     TD        : out std_logic;   -- RS232 Transmission line
@@ -37,7 +37,7 @@ architecture Testbench of RS232dmaramtop_TB is
        );
   end component;
   
-  signal Reset, Clk, Clk100MHz,Clk20MHz, DMA_RQ, DMA_ACK,Send_comm, READY : std_logic;--eliminado:TX_RDY, Data_read
+  signal Reset, Clk, Clk100MHz, DMA_RQ, DMA_ACK,Send_comm, READY : std_logic;--eliminado:TX_RDY, Data_read,Clk20MHz
   signal TD, RD : std_logic;
   signal  switches,databus : std_logic_vector(7 downto 0);
   signal Temp_L,Temp_H  : std_logic_vector(6 downto 0);
@@ -48,7 +48,7 @@ begin
     port map (
       Reset         => Reset    ,
       Clk100MHz     => Clk      ,
-      Clk20MHz     => Clk20MHz      ,
+      --Clk20MHz     => Clk20MHz      ,
       --Data_in       => Data_in  ,
       TD            => TD       ,
       RD            => RD       ,
@@ -85,7 +85,7 @@ begin
         DMA_ACK <= '0', '1' after 87 us,'0' after 88 us, '1' after 187 us, '0' after 188 us, '1' after 300 us,'0' after 301 us;-- '0' after 87010 ns, '1' after 187 us, '0' after 187010 ns, '1' after 287 us, '0' after 287010 ns; --despues de llegar los tres datos   
 
 --peticion porparte del ocntorl prncipal que envie datos
-          Send_comm <='0', '0' after 110 us,'1' after 350 us, '0' after 400 us, '1' after 550 us, '0' after 555 us;
+          Send_comm <='0','0' after 50 us, '0' after 51 us, '1' after 350 us, '0' after 400 us, '1' after 550 us, '0' after 555 us;
           
           
  ----    un bit con mas retraso               

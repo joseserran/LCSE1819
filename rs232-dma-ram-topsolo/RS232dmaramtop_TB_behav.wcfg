@@ -17,7 +17,7 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="170"></NameColumnWidth>
-      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="28" />
    <wvobject fp_name="/RS232dmaramtop_TB/Reset" type="logic">
