@@ -17,7 +17,7 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="170"></NameColumnWidth>
-      <ValueColumnWidth column_width="83"></ValueColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="28" />
    <wvobject fp_name="/RS232dmaramtop_TB/Reset" type="logic">
@@ -107,14 +107,17 @@
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[2]" type="array">
       <obj_property name="ElementShortName">[2][7:0]</obj_property>
       <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[1]" type="array">
       <obj_property name="ElementShortName">[1][7:0]</obj_property>
       <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[0]" type="array">
       <obj_property name="ElementShortName">[0][7:0]</obj_property>
       <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueDMA/contador_envio" type="other">
       <obj_property name="ElementShortName">contador_envio</obj_property>

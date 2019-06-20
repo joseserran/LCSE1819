@@ -6,21 +6,21 @@ library ieee;
 entity RS232dmaramtop is
 
   port (
-     Reset     : in  std_logic;   -- Low_level-active asynchronous reset
-     CLK100MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
-    -- CLK20MHZ : in  std_logic;   -- System clock (20MHz), rising edge used
-     --Data_in   : in  std_logic_vector(7 downto 0);  -- Data to be sent
-     TD        : out std_logic;   -- RS232 Transmission line
-     RD        : in  std_logic;   -- RS232 Reception line
-     databus  : inout std_logic_vector(7 downto 0);
-     switches : out   std_logic_vector(7 downto 0);
-     Temp_L   : out   std_logic_vector(6 downto 0);
-     Temp_H   : out   std_logic_vector(6 downto 0);
-     --TX_Data      : out    std_logic_vector(7 downto 0);
+     Reset          : in  std_logic;   -- Low_level-active asynchronous reset
+     CLK100MHZ      : in  std_logic;   -- System clock (20MHz), rising edge used
+     CLK20MHZ       : out  std_logic;   -- System clock (20MHz), rising edge used
+     TD             : out std_logic;   -- RS232 Transmission line
+     RD             : in  std_logic;   -- RS232 Reception line
+     databus        : inout std_logic_vector(7 downto 0);
+     address        : inout    std_logic_vector(7 downto 0);
+     switches       : out   std_logic_vector(7 downto 0);
+     Temp_L         : out   std_logic_vector(6 downto 0);
+     Temp_H         : out   std_logic_vector(6 downto 0);
      DMA_RQ       : out    std_logic;
      DMA_ACK      : in     std_logic;
      Send_comm    : in    std_logic;
-     READY        : out   std_logic     
+     READY        : out   std_logic;
+     oe            : inout    std_logic     
 
         );
         
@@ -75,8 +75,7 @@ architecture RTL of RS232dmaramtop is
 component DMA is
  Port(
            Reset        : in    std_logic;
-           --CLK100MHZ    : in    std_logic;
-           CLK         : in    std_logic;
+           CLK         : in    std_logic; --reloj de 20mhz
            RCVD_Data    : in    std_logic_vector(7 downto 0);
            RX_Full      : in    std_logic;
            RX_Empty     : in    std_logic;
@@ -103,9 +102,9 @@ end component;
     signal Data_read : std_logic;   -- Data read for guest system
     signal TX_RDY    : std_logic;   -- System ready to transmit 
     signal Valid_D   : std_logic;   -- Handshake signal
-    signal address  : std_logic_vector(7 downto 0);
+    --signal address  : std_logic_vector(7 downto 0);
     signal write_en : std_logic;
-    signal oe       : std_logic;
+    --signal oe       : std_logic;
     signal ACK_flag    : std_logic;   -- ACK for data received, low once data
     signal RX_Empty, RX_Full    : std_logic;
     signal Data_recibida, Data_in : std_logic_vector(7 downto 0); --dato recibido por la linea RX
@@ -120,12 +119,12 @@ begin  -- RTL
     port map (
         Reset     => Reset     ,
         CLK100MHZ => CLK100MHZ ,
-        clk20MHZ   => clk,
+        CLK20MHZ   => clk,
         Data_in   => Data_in   ,
         Valid_D   => Valid_D   ,
         
         ACK_out    => ACK_flag    ,
-    
+        
         TX_RDY    => TX_RDY    ,
         TD        => TD        ,
         RD        => RD        ,

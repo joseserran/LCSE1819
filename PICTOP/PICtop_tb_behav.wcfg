@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="PICtop_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="PICtop_tb" />
+            <top_module name="pic_pkg" />
+            <top_module name="rs232_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="418302352001fs"></ZoomEndTime>
+      <Cursor1Time time="122830000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="170"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/PICtop_tb/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/RS232_RX" type="logic">
+      <obj_property name="ElementShortName">RS232_RX</obj_property>
+      <obj_property name="ObjectShortName">RS232_RX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueRS232/Receiver/estado_a" type="other">
+      <obj_property name="ElementShortName">estado_a</obj_property>
+      <obj_property name="ObjectShortName">estado_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueDMA/RX_Empty" type="logic">
+      <obj_property name="ElementShortName">RX_Empty</obj_property>
+      <obj_property name="ObjectShortName">RX_Empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/RS232_TX" type="logic">
+      <obj_property name="ElementShortName">RS232_TX</obj_property>
+      <obj_property name="ObjectShortName">RS232_TX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/CPU_bloque/send_comm" type="logic">
+      <obj_property name="ElementShortName">send_comm</obj_property>
+      <obj_property name="ObjectShortName">send_comm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueDMA/estado_a" type="other">
+      <obj_property name="ElementShortName">estado_a</obj_property>
+      <obj_property name="ObjectShortName">estado_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueDMA/DMA_RQ" type="logic">
+      <obj_property name="ElementShortName">DMA_RQ</obj_property>
+      <obj_property name="ObjectShortName">DMA_RQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueDMA/DMA_ACK" type="logic">
+      <obj_property name="ElementShortName">DMA_ACK</obj_property>
+      <obj_property name="ObjectShortName">DMA_ACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/CPU_bloque/dma_ack" type="logic">
+      <obj_property name="ElementShortName">dma_ack</obj_property>
+      <obj_property name="ObjectShortName">dma_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueDMA/Databus" type="array">
+      <obj_property name="ElementShortName">Databus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Databus[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueDMA/Address" type="array">
+      <obj_property name="ElementShortName">Address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/CPU_bloque/estado_a" type="other">
+      <obj_property name="ElementShortName">estado_a</obj_property>
+      <obj_property name="ObjectShortName">estado_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/CPU_bloque/estado_s" type="other">
+      <obj_property name="ElementShortName">estado_s</obj_property>
+      <obj_property name="ObjectShortName">estado_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/CPU_bloque/command_alu" type="other">
+      <obj_property name="ElementShortName">command_alu</obj_property>
+      <obj_property name="ObjectShortName">command_alu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/switches" type="array">
+      <obj_property name="ElementShortName">switches[7:0]</obj_property>
+      <obj_property name="ObjectShortName">switches[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/Temp_L" type="array">
+      <obj_property name="ElementShortName">Temp_L[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Temp_L[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/TEMP_H" type="array">
+      <obj_property name="ElementShortName">TEMP_H[6:0]</obj_property>
+      <obj_property name="ObjectShortName">TEMP_H[6:0]</obj_property>
+   </wvobject>
+</wave_config>

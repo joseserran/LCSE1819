@@ -10,7 +10,7 @@ USE work.PIC_pkg.all;
 entity ALU is
  Port(
     Reset           : in    std_logic;
-    CLK100MHZ       : in    std_logic;
+    CLK       : in    std_logic;
     u_instruction   : in    alu_op; --bus de microinstrucciones
     databus : inout  STD_LOGIC_VECTOR (7 downto 0);
     Index_Reg       : out    STD_LOGIC_VECTOR (7 downto 0);
@@ -26,7 +26,7 @@ architecture behavior of ALU is
 
 begin
 
-process(CLK100MHZ, reset)  
+process(CLK, reset)  
 
 begin
 
@@ -38,7 +38,7 @@ begin
 		FlagZ <= '0';
 		databus <= "ZZZZZZZZ";
 	
-	elsif CLK100MHZ'event and CLK100MHZ='1' then
+	elsif CLK'event and CLK='1' then
 	   
        case u_instruction is
         

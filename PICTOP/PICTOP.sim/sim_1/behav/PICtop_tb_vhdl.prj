@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../PICTOP.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../PICTOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../../PIC/PIC_pkg.vhd"
+vhdl xil_defaultlib  "../../../../ALU/ALU.vhd"
+vhdl xil_defaultlib  "../../../../CPU/CPU.vhd"
+vhdl xil_defaultlib  "../../../../PIC/DMA.vhd"
+vhdl xil_defaultlib  "../../../../PIC/PICtop.vhd"
+vhdl xil_defaultlib  "../../../../PIC/RAM.vhd"
+vhdl xil_defaultlib  "../../../../PIC/ROM.vhd"
+vhdl xil_defaultlib  "../../../../RS232/RS232_RX.vhd"
+vhdl xil_defaultlib  "../../../../RS232/RS232_TX.vhd"
+vhdl xil_defaultlib  "../../../../CPU/RS232_test.vhd"
+vhdl xil_defaultlib  "../../../../RS232/RS232top.vhd"
+vhdl xil_defaultlib  "../../../../RS232/ShiftRegister.vhd"
+vhdl xil_defaultlib  "../../../../rs232-dma-ram-top/rs232-dma-ram-top.vhd"
+vhdl xil_defaultlib  "../../../../CPU/tb_PICtop.vhd"
+
+# Do not sort compile order
+nosort

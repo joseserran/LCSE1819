@@ -27,3 +27,62 @@ launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 close_design
 open_run impl_1
+launch_simulation
+open_wave_config C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg
+source RS232dmaramtop_TB.tcl
+run 800 us
+save_wave_config {C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg}
+close_sim
+close_project
+open_project C:/Users/joseangelSSD/Documents/LCSE1819/PICTOP/PICTOP.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/joseangelSSD/Documents/LCSE1819/ALU/ALU.vhd C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/joseangelSSD/Documents/LCSE1819/CPU/CPU.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/rs232-dma-ram.xpr
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-topsolo/RS232dmaramtop_TB_behav.wcfg
+source RS232dmaramtop_TB.tcl
+run 800 us
+close_sim
+close_project
+open_project C:/Users/joseangelSSD/Documents/LCSE1819/PICTOP/PICTOP.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/joseangelSSD/Documents/LCSE1819/CPU/tb_PICtop.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sim_1
+refresh_design
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/joseangelSSD/Documents/LCSE1819/CPU/RS232_test.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source PICtop_tb.tcl
+run 800 us
+save_wave_config {C:/Users/joseangelSSD/Documents/LCSE1819/PICTOP/PICtop_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/joseangelSSD/Documents/LCSE1819/PICTOP/PICtop_tb_behav.wcfg
+set_property xsim.view C:/Users/joseangelSSD/Documents/LCSE1819/PICTOP/PICtop_tb_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+run 800 us
+relaunch_sim
+run 800 us
+relaunch_sim
+run 800 us
+relaunch_sim
+run 800 us
+save_wave_config {C:/Users/joseangelSSD/Documents/LCSE1819/PICTOP/PICtop_tb_behav.wcfg}
+close_sim

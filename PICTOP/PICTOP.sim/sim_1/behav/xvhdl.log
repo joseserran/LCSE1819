@@ -1,0 +1,48 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PICTOP/PICTOP.srcs/sources_1/ip/fifo/fifo_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity fifo_rd_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_rd_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_wr_bin_cntr
+INFO: [VRFC 10-307] analyzing entity fifo_wr_status_flags_ss
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity fifo_rd_logic
+INFO: [VRFC 10-307] analyzing entity fifo_wr_logic
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity fifo_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity fifo_memory
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_ramfifo
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4_synth
+INFO: [VRFC 10-307] analyzing entity fifo_fifo_generator_v13_1_4
+INFO: [VRFC 10-307] analyzing entity fifo
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PICTOP/PICTOP.srcs/sources_1/ip/Clk_Gen/Clk_Gen_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clk_Gen_Clk_Gen_clk_wiz
+INFO: [VRFC 10-307] analyzing entity Clk_Gen
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PIC_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/ALU/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/CPU/CPU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CPU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/DMA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DMA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/PICtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PICtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/PIC/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_RX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_RX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/CPU/RS232_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/RS232top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/RS232/ShiftRegister.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ShiftRegister
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/rs232-dma-ram-top/rs232-dma-ram-top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RS232dmaramtop
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/joseangelSSD/Documents/LCSE1819/CPU/tb_PICtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PICtop_tb

@@ -1,0 +1,1 @@
+-wto "9d11ef5121cd4264b846168fc94b35df" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "PICtop_tb_behav" "xil_defaultlib.PICtop_tb" -log "elaborate.log" 
