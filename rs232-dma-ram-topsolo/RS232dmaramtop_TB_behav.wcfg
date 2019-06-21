@@ -17,7 +17,7 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="170"></NameColumnWidth>
-      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+      <ValueColumnWidth column_width="71"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="28" />
    <wvobject fp_name="/RS232dmaramtop_TB/Reset" type="logic">
@@ -87,6 +87,7 @@
    <wvobject fp_name="/RS232dmaramtop_TB/databus" type="array">
       <obj_property name="ElementShortName">databus[7:0]</obj_property>
       <obj_property name="ObjectShortName">databus[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/address" type="array">
       <obj_property name="ElementShortName">address[7:0]</obj_property>

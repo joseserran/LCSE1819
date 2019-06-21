@@ -63,8 +63,8 @@ begin
     contador_recepcion_s <= contador_recepcion;
     contador_envio_s <= contador_envio;
     --para eliminar latches
-    Address <= "ZZZZZZZZ";--libera el uso de la direccion de memoria, en espera en alta impedancia
-    Databus <= "ZZZZZZZZ";--libera bus de datos del sistema, en espera en alta impedancia 
+--    Address <= "ZZZZZZZZ";--libera el uso de la direccion de memoria, en espera en alta impedancia
+--    Databus <= "ZZZZZZZZ";--libera bus de datos del sistema, en espera en alta impedancia 
         
     case estado_a is
     
@@ -139,7 +139,7 @@ begin
             OE <= 'Z';--en espera OE en alta impedancia
             
             --si sigue activo la dma_ack y rx_se vacia
-            if DMA_ACK = '1' and RX_Empty = '1'then
+            if DMA_ACK = '1'and RX_Empty = '1'then
                 estado_s <= pidiendoBusesRecepcion;--volvemos a idle para darle prioridad al envio de datos
                 contador_recepcion_s <= 2;
             end if;
@@ -196,7 +196,7 @@ begin
             Valid_d <= '1';
             Address <= "ZZZZZZZZ";--libera el uso de la direccion de memoria, en espera en alta impedancia
             data_read <= '0'; --peticion de lectura del rs232
-            TX_DATA <= Databus;
+            TX_DATA <= "ZZZZZZZZ";
             Write_en <= '0';--no escribimos en la ram
             OE <= 'Z';--en espera OE en alta impedancia
             DMA_RQ <= '0';
@@ -212,7 +212,7 @@ begin
                 end if;
                 
                 --descomentando lo siguiente hacemos que el envio de datos no sea uno tras otro, dependiendo de que la
-                --unidad principal de control mantenga en alto la señal "send_comm"
+                --unidad principal de control mantenga en alto la seï¿½al "send_comm"
 --             else
 --                 estado_s <= idle;
                 
@@ -228,7 +228,7 @@ begin
             Write_en <= '0';--no escribimos en la ram 
             DMA_RQ <= '0';
             
-            if ACK_in = '0' then -- and TX_RDY = '1' then --añadido TX_RDY = '1'
+            if ACK_in = '0' then -- and TX_RDY = '1' then --aï¿½adido TX_RDY = '1'
                 estado_s <= esperandoEnvio;--volviendo a idle desde aqui esperamos con buses en alta impedancia en vez de con el dato mantenido
                 contador_envio_s <= 2;
                 --Valid_d <= '1';
