@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command=".planAhead." Owner="joseangelSSD" Host="JOSEANGELSSD-PC" Pid="1988">
+    <Process Command="vivado.bat" Owner="joseangelSSD" Host="JOSEANGELSSD-PC" Pid="9076">
     </Process>
 </ProcessHandle>

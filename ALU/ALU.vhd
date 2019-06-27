@@ -36,7 +36,7 @@ begin
 		acumulador <= "00000000";
 		Index_Reg<= "00000000";
 		FlagZ <= '0';
-		databus <= "ZZZZZZZZ";
+--		databus <= "ZZZZZZZZ";
 	
 	elsif CLK'event and CLK='1' then
 	   

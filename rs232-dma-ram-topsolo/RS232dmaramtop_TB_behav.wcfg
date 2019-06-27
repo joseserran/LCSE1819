@@ -13,11 +13,11 @@
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
       <ZoomEndTime time="801000000001fs"></ZoomEndTime>
-      <Cursor1Time time="801000000000fs"></Cursor1Time>
+      <Cursor1Time time="437310000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="170"></NameColumnWidth>
-      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="28" />
    <wvobject fp_name="/RS232dmaramtop_TB/Reset" type="logic">
@@ -96,14 +96,17 @@
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[5]" type="array">
       <obj_property name="ElementShortName">[5][7:0]</obj_property>
       <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[4]" type="array">
       <obj_property name="ElementShortName">[4][7:0]</obj_property>
       <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[3]" type="array">
       <obj_property name="ElementShortName">[3][7:0]</obj_property>
       <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RS232dmaramtop_TB/UUT/bloqueRAM/contents_ram[2]" type="array">
       <obj_property name="ElementShortName">[2][7:0]</obj_property>

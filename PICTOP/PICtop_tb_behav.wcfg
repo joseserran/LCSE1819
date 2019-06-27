@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="382530833333fs"></ZoomStartTime>
-      <ZoomEndTime time="383429833334fs"></ZoomEndTime>
-      <Cursor1Time time="383030000000fs"></Cursor1Time>
+      <ZoomStartTime time="271731240000fs"></ZoomStartTime>
+      <ZoomEndTime time="677231240001fs"></ZoomEndTime>
+      <Cursor1Time time="419730000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="25" />
+   <WVObjectSize size="32" />
    <wvobject fp_name="/PICtop_tb/Reset" type="logic">
       <obj_property name="ElementShortName">Reset</obj_property>
       <obj_property name="ObjectShortName">Reset</obj_property>
@@ -128,5 +128,33 @@
    <wvobject fp_name="/PICtop_tb/UUT/ROM_bloque/Program_counter" type="array">
       <obj_property name="ElementShortName">Program_counter[11:0]</obj_property>
       <obj_property name="ObjectShortName">Program_counter[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider60">
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueRAM/contents_ram[5]" type="array">
+      <obj_property name="ElementShortName">[5][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueRAM/contents_ram[4]" type="array">
+      <obj_property name="ElementShortName">[4][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueRAM/contents_ram[3]" type="array">
+      <obj_property name="ElementShortName">[3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueRAM/contents_ram[2]" type="array">
+      <obj_property name="ElementShortName">[2][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueRAM/contents_ram[1]" type="array">
+      <obj_property name="ElementShortName">[1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PICtop_tb/UUT/rs232dmaramtop_bloque/bloqueRAM/contents_ram[0]" type="array">
+      <obj_property name="ElementShortName">[0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][7:0]</obj_property>
    </wvobject>
 </wave_config>
